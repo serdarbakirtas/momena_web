@@ -4,8 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <title>Momena</title>
-  <meta name="description" content="Momena helps families organize memories, events, and health records in one simple place." />
+  <title>Momena – Family memories, calendar &amp; health in one app</title>
+  <meta name="description" content="Momena helps families organize memories, events, and health records in one simple, private iOS app. Encrypted on-device; optional iCloud backup." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="keywords" content="Momena, family app, family organizer, family memories, baby tracker, family calendar, child health, iOS app, iPhone, iPad, encrypted, private, FamilyaKit, photo timeline, family journal" />
+  <meta name="author" content="Momena" />
+  <meta name="application-name" content="Momena" />
+  <meta name="theme-color" content="#1e1e2e" />
+  <link rel="canonical" href="https://momena.app/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Momena" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Momena – Family memories, calendar &amp; health in one app" />
+  <meta property="og:description" content="Momena helps families organize memories, events, and health records in one simple, private iOS app. Encrypted on-device; optional iCloud backup." />
+  <meta property="og:url" content="https://momena.app/" />
+  <meta property="og:image" content="https://momena.app/assets/images/MomenaLogo.png" />
+  <meta property="og:image:alt" content="Momena – family organizer app logo" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Momena – Family memories, calendar &amp; health in one app" />
+  <meta name="twitter:description" content="Organize memories, events, and health records in one private iOS app." />
+  <meta name="twitter:image" content="https://momena.app/assets/images/MomenaLogo.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
@@ -14,18 +32,57 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/cookies-banner.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://momena.app/#organization",
+        "name": "Momena",
+        "url": "https://momena.app/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://momena.app/assets/images/MomenaLogo.png"
+        },
+        "sameAs": ["https://apps.apple.com/us/app/familyakit/id6758870737"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://momena.app/#website",
+        "url": "https://momena.app/",
+        "name": "Momena",
+        "description": "Family memories, calendar, and health records in one private iOS app.",
+        "publisher": { "@id": "https://momena.app/#organization" },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Momena",
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": "iOS",
+        "isAccessibleForFree": true,
+        "url": "https://apps.apple.com/us/app/familyakit/id6758870737"
+      }
+    ]
+  }
+  </script>
 </head>
 <body oncontextmenu="return false;">
   <header class="header">
-    <a class="logo-header" href="#">
-      <img src="assets/images/MomenaLogo.png" alt="Momena" />
-      <span>Momena</span>
-    </a>
-    <nav class="nav-links">
-      <a href="privacy-policy/">Privacy Policy</a>
-      <a href="cookies-policy/">Cookie Policy</a>
-      <a class="btn btn-primary" href="https://apps.apple.com/us/app/familyakit/id6758870737">Download</a>
-    </nav>
+    <div class="header-inner">
+      <a class="logo-header" href="./">
+        <img src="assets/images/MomenaLogo.png" alt="Momena" />
+        <span>Momena</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="pricing/">Pricing</a>
+        <a href="our-story/">Our story</a>
+        <a href="blog/">Blog</a>
+        <a href="support/">Support</a>
+        <a class="btn btn-primary btn-sm" href="https://apps.apple.com/us/app/familyakit/id6758870737">Download</a>
+      </nav>
+    </div>
   </header>
 
   <section class="hero">
@@ -36,7 +93,7 @@
     </p>
     <div class="actions">
       <a class="btn btn-primary" href="https://apps.apple.com/us/app/familyakit/id6758870737">Download on the App Store</a>
-      <a class="btn btn-secondary" href="privacy-policy/">Privacy Policy</a>
+      <a class="btn btn-secondary" href="pricing/">Pricing</a>
     </div>
   </section>
 
@@ -178,13 +235,34 @@
     </div>
   </section>
 
-  <footer class="footer">
-    <a href="privacy-policy/">Privacy Policy</a>
-    <span aria-hidden="true"> · </span>
-    <a href="cookies-policy/">Cookie Policy</a>
-    <span aria-hidden="true"> · </span>
-    <a href="#" id="cookie-prefs">Cookie preferences</a>
-    <p class="copy">© 2026 Momena. All rights reserved.</p>
+  <footer class="footer-site">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Navigate</h3>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="pricing/">Pricing</a></li>
+          <li><a href="our-story/">Our story</a></li>
+          <li><a href="blog/">Blog</a></li>
+          <li><a href="support/">Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="privacy-policy/">Privacy Policy</a></li>
+          <li><a href="terms-of-service/">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        <a href="cookies-policy/">Cookie Policy</a>
+        <span aria-hidden="true"> · </span>
+        <a href="#" id="cookie-prefs">Cookie preferences</a>
+      </p>
+      <p>© 2026 Momena. All rights reserved.</p>
+    </div>
   </footer>
 
   <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent">

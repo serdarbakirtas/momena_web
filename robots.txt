@@ -1,0 +1,5 @@
+# Allow all crawlers. Update the sitemap URL if your site uses a domain other than https://momena.app/
+User-agent: *
+Allow: /
+
+Sitemap: https://momena.app/sitemap.xml
