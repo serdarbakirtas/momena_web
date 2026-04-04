@@ -40,4 +40,20 @@
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url><loc>https://momena.app/de/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://momena.app/de/pricing/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://momena.app/de/our-story/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://momena.app/de/blog/</loc><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://momena.app/de/support/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://momena.app/de/privacy-policy/</loc><changefreq>yearly</changefreq><priority>0.55</priority></url>
+  <url><loc>https://momena.app/de/cookies-policy/</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://momena.app/de/terms-of-service/</loc><changefreq>yearly</changefreq><priority>0.55</priority></url>
+  <url><loc>https://momena.app/tr/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://momena.app/tr/pricing/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://momena.app/tr/our-story/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://momena.app/tr/blog/</loc><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://momena.app/tr/support/</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://momena.app/tr/privacy-policy/</loc><changefreq>yearly</changefreq><priority>0.55</priority></url>
+  <url><loc>https://momena.app/tr/cookies-policy/</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://momena.app/tr/terms-of-service/</loc><changefreq>yearly</changefreq><priority>0.55</priority></url>
 </urlset>
