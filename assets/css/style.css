@@ -5,15 +5,15 @@
 }
 
 :root {
-  --bg: #0a1614;
-  --bg-card: #12201e;
-  --bg-elevated: #1a2a27;
-  --coral: #e87a6d;
-  --coral-hover: #f08a7d;
-  --coral-glow: rgba(232, 122, 109, 0.35);
+  --bg: #1e1e2e;
+  --bg-card: #1e1e2e;
+  --bg-elevated: #1e1e2e;
+  --coral: #A7A0F8;
+  --coral-hover: #A7A0F8;
+  --coral-glow: rgba(107, 111, 139, 0.35);
   --text: #f8faf9;
   --text-muted: #94a3a0;
-  --border: rgba(148, 163, 160, 0.15);
+  --border: rgba(107, 111, 139, 0.35);
 }
 
 body {
@@ -131,8 +131,8 @@ body {
 }
 
 .hero-logo {
-  width: 100px;
-  height: 100px;
+  width: 160px;
+  height: 160px;
   object-fit: contain;
   margin-bottom: 24px;
 }
@@ -250,7 +250,7 @@ body {
 }
 
 .feature-card:hover {
-  border-color: rgba(232, 122, 109, 0.3);
+  border-color: rgba(107, 111, 109, 0.3);
   transform: translateY(-2px);
 }
 
