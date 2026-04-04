@@ -693,13 +693,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  flex-shrink: 0;
   border-radius: 50%;
   border: 1px solid var(--border);
   color: var(--text-muted);
   text-decoration: none;
   transition: color 0.2s, border-color 0.2s, transform 0.15s;
+  box-sizing: border-box;
 }
 
 .footer-social-link:hover {
@@ -708,10 +712,16 @@ body {
   transform: translateY(-2px);
 }
 
+/* Safari: inline SVGs can ignore width/height inside flex; lock size explicitly */
 .footer-social-link svg {
-  width: 18px;
-  height: 18px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  max-width: 16px;
+  max-height: 16px;
+  flex-shrink: 0;
   fill: currentColor;
+  overflow: visible;
 }
 
 .footer-bottom-split {
