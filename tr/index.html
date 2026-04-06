@@ -19,14 +19,14 @@
   <meta property="og:locale" content="tr_TR" />
   <meta property="og:site_name" content="Momena" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Momena – Family memories, calendar &amp; health in one app" />
-  <meta property="og:description" content="Momena helps families organize memories, events, and health records in one simple, private iOS app. Encrypted on-device; optional iCloud backup." />
+  <meta property="og:title" content="Momena – Aile anıları, takvim ve sağlık tek uygulamada" />
+  <meta property="og:description" content="Momena, ailelerin anıları, etkinlikleri ve sağlık kayıtlarını basit ve gizli bir iOS uygulamasında düzenlemesine yardımcı olur. Şifreli, isteğe bağlı iCloud yedekleme." />
   <meta property="og:url" content="https://momena.app/tr/" />
   <meta property="og:image" content="https://momena.app/assets/images/MomenaLogo.png" />
   <meta property="og:image:alt" content="Momena – family organizer app logo" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Momena – Family memories, calendar &amp; health in one app" />
-  <meta name="twitter:description" content="Organize memories, events, and health records in one private iOS app." />
+  <meta name="twitter:title" content="Momena – Aile anıları, takvim ve sağlık tek uygulamada" />
+  <meta name="twitter:description" content="Anıları, etkinlikleri ve sağlık kayıtlarını tek bir gizli iOS uygulamasında düzenleyin." />
   <meta name="twitter:image" content="https://momena.app/assets/images/MomenaLogo.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png" />
@@ -56,7 +56,7 @@
         "@id": "https://momena.app/#website",
         "url": "https://momena.app/",
         "name": "Momena",
-        "description": "Family memories, calendar, and health records in one private iOS app.",
+        "description": "Aile anıları, takvim ve sağlık kayıtları tek bir gizli iOS uygulamasında.",
         "publisher": { "@id": "https://momena.app/#organization" },
         "inLanguage": "tr"
       },
@@ -67,24 +67,51 @@
         "operatingSystem": "iOS",
         "isAccessibleForFree": true,
         "url": "https://apps.apple.com/us/app/familyakit/id6758870737"
+      },
+      {
+        "@type": "Blog",
+        "name": "Momena Blog",
+        "url": "https://momena.app/blog/",
+        "description": "Momena ekibinden haberler ve ipuçları.",
+        "publisher": { "@id": "https://momena.app/#organization" },
+        "blogPost": [
+          {
+            "@type": "BlogPosting",
+            "headline": "Welcome to the Momena blog",
+            "datePublished": "2026-04-04",
+            "url": "https://momena.app/blog/welcome-to-the-momena-blog.html"
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "Why local-first matters for families",
+            "datePublished": "2026-04-04",
+            "url": "https://momena.app/blog/why-local-first-matters.html"
+          }
+        ]
       }
     ]
   }
   </script>
 </head>
 <body oncontextmenu="return false;">
+  <a class="skip-link" href="#home">İçeriğe atla</a>
   <header class="header">
     <div class="header-bar">
       <div class="header-inner">
-        <a class="logo-header" href="./">
-          <img src="../assets/images/MomenaLogo.png" alt="Momena" />
+        <a class="logo-header" href="#home">
+          <img src="../assets/images/MomenaLogo.png" alt="Momena" width="36" height="36" />
           <span>Momena</span>
         </a>
-        <nav class="nav-links" aria-label="Primary">
-          <a href="pricing/">Fiyatlandırma</a>
-          <a href="our-story/">Hikayemiz</a>
-          <a href="blog/">Blog</a>
-          <a href="support/">Support</a>
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="visually-hidden">Menü</span>
+          <span class="nav-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+        <nav id="primary-navigation" class="nav-links" aria-label="Ana gezinme">
+          <a href="#home" class="is-active" data-nav-target="home" aria-current="location">Ana sayfa</a>
+          <a href="#pricing" data-nav-target="pricing">Fiyatlandırma</a>
+          <a href="#our-story" data-nav-target="our-story">Hikayemiz</a>
+          <a href="#blog" data-nav-target="blog">Blog</a>
+          <a href="#support" data-nav-target="support">Support</a>
         </nav>
       </div>
       <a
@@ -100,173 +127,487 @@
     </div>
   </header>
 
-  <section class="hero">
-    <img class="hero-logo" src="../assets/images/MomenaLogo.png" alt="Momena" />
-    <h1>Aile anılarını kaçırmayın.<br />Profesyonel gibi düzenleyin.</h1>
-    <p class="lead">
-      Anılar, etkinlikler ve sağlık kayıtları tek yerde. Büyüme, uyku ve randevular—aileler için.
-    </p>
-    <div class="actions">
-      <a class="btn btn-primary" href="https://apps.apple.com/us/app/familyakit/id6758870737">App Store’dan indir</a>
-      <a class="btn btn-secondary" href="pricing/">Fiyatlandırma</a>
+  <main id="main-content">
+  <div id="home" class="page-anchor-block" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-heading">
+      <img class="hero-logo" src="../assets/images/MomenaLogo.png" alt="" width="160" height="160" />
+      <h1 id="hero-heading">Aile anılarını kaçırmayın.<br />Profesyonel gibi düzenleyin.</h1>
+      <p class="lead">
+        Anılar, etkinlikler ve sağlık kayıtları tek yerde. Büyüme, uyku ve randevular—aileler için.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://apps.apple.com/us/app/familyakit/id6758870737">App Store’dan indir</a>
+        <a class="btn btn-secondary" href="#pricing">Fiyatlandırma</a>
+      </div>
+    </section>
+
+    <section class="showcase" aria-labelledby="showcase-heading">
+      <h2 id="showcase-heading">Aileniz, tek uygulama</h2>
+      <p class="subtitle">Anılar, takvim, sağlık—hepsi uyum içinde.</p>
+      <div class="phones">
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <img src="../assets/images/iphone/IMG_3620.png" alt="Momena Home" />
+          </div>
+        </div>
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <img src="../assets/images/iphone/IMG_3621.png" alt="Momena Home" />
+          </div>
+        </div>
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <img src="../assets/images/iphone/IMG_3622.png" alt="Momena Home" />
+          </div>
+        </div>
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <img src="../assets/images/iphone/IMG_3623.png" alt="Momena Home" />
+          </div>
+        </div>
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <img src="../assets/images/iphone/IMG_3625.png" alt="Momena Home" />
+          </div>
+        </div>
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <img src="../assets/images/iphone/IMG_3624.png" alt="Momena Home" />
+          </div>
+        </div>
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <img src="../assets/images/iphone/IMG_3626.png" alt="Momena Home" />
+          </div>
+        </div>
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <img src="../assets/images/iphone/IMG_3627.png" alt="Momena Home" />
+          </div>
+        </div>
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <img src="../assets/images/iphone/IMG_3628.png" alt="Momena Home" />
+          </div>
+        </div>
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <img src="../assets/images/iphone/IMG_3629.png" alt="Momena Home" />
+          </div>
+        </div>
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <img src="../assets/images/iphone/IMG_3630.png" alt="Momena Home" />
+          </div>
+        </div>
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <img src="../assets/images/iphone/IMG_3631.png" alt="Momena Home" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" aria-labelledby="features-heading">
+      <h2 id="features-heading">Aileler için</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>Anılar</h3>
+          <p>Fotoğraf, video ve notlar. En güzel anları zaman çizelgesinde toplayın.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Etkinlikler ve takvim</h3>
+          <p>Doğum günleri, randevular, aşılar—önemli tarihleri kaçırmayın.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Sağlık takibi</h3>
+          <p>Boy, kilo, uyku, semptomlar. Kayıtlar güvenli bir yerde.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="security" aria-labelledby="security-heading">
+      <h2 id="security-heading">Önce güvenlik</h2>
+      <p class="subtitle">Aile verileriniz gizli ve korunur.</p>
+      <div class="security-grid">
+        <div class="security-card">
+          <div class="icon" aria-hidden="true">🔒</div>
+          <h3>AES-256 şifreleme</h3>
+          <p>Hassas veriler AES-256-GCM ile şifrelenir. Anahtarlar iOS Anahtarlık’ta saklanır.</p>
+        </div>
+        <div class="security-card">
+          <div class="icon" aria-hidden="true">🛡️</div>
+          <h3>Varsayılan olarak cihazda</h3>
+          <p>Veriler cihazınızda kalır. İsteğe bağlı iCloud Yedekleme dışında bulut gerekmez.</p>
+        </div>
+        <div class="security-card">
+          <div class="icon" aria-hidden="true">☁️</div>
+          <h3>Şifreli iCloud yedekleme</h3>
+          <p>Etkinleştirildiğinde yedekler iCloud’unuzda şifreli saklanır—verilerinizi görmeyiz.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Sıkça sorulan sorular</h2>
+      <p class="subtitle">Başka sorunuz mu var? <a href="mailto:serdarbakirtas@pm.me">serdarbakirtas@pm.me</a> adresine yazın.</p>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-question">Momena’yı diğer aile uygulamalarından ayıran nedir?</summary>
+          <p class="faq-answer">Momena anıları, takvimi ve sağlığı tek uygulamada birleştirir. Verileriniz varsayılan olarak AES-256 ile cihazınızda kalır—isteğe bağlı iCloud Yedekleme hariç bulut gerekmez. Verilerinizi satmıyor veya reklam için kullanmıyoruz.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Momena için ödeme yapmam gerekir mi?</summary>
+          <p class="faq-answer">Yerel kullanım ücretsizdir. iCloud Yedekleme isteğe bağlıdır—yalnızca cihaz değişiminde yedek isterseniz ödersiniz.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Momena çevrimdışı çalışır mı?</summary>
+          <p class="faq-answer">Evet. Tüm veriler cihazınızda. Uygulama çevrimdışı çalışır. iCloud etkinse bağlantıda senkron olur; temel özellikler internet istemez.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Verilerim ne kadar güvenli?</summary>
+          <p class="faq-answer">Hassas veriler AES-256-GCM ile şifrelenir. Anahtarlar iOS Anahtarlık’tadır. Kendi sunucularımız yok—veriler cihazda veya iCloud’unuzda kalır.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Verilerimi dışa aktarabilir veya silebilir miyim?</summary>
+          <p class="faq-answer">Evet. İstediğiniz zaman dışa aktarın, ayarlardan silin, yedeklemeyi yönetin.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Hangi cihazlarda çalışır?</summary>
+          <p class="faq-answer">Momena iPhone ve iPad için App Store’da. iOS güvenlik özelliklerini kullanır.</p>
+        </details>
+      </div>
+    </section>
+  </div>
+
+  <section id="pricing" class="page-section page-anchor-block" aria-labelledby="pricing-title">
+    <div class="page-main wide">
+      <h1 class="page-title" id="pricing-title">Fiyatlandırma</h1>
+      <p class="page-lead">iCloud Yedekleme için isteğe bağlı abonelik. Momena’yı yerelde kullanmak ücretsizdir.</p>
+
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <h2>Aylık</h2>
+          <div class="price">€3,99</div>
+          <p class="period">aylık</p>
+          <p class="subtext">App Store üzerinden aylık faturalandırma. İstediğiniz zaman iptal.</p>
+        </div>
+        <div class="pricing-card">
+          <h2>Yıllık</h2>
+          <div class="price">€34,99</div>
+          <p class="period">yıllık</p>
+          <p class="subtext">Yıl boyu yedek isteyen aileler için en iyi değer.</p>
+        </div>
+      </div>
+
+      <div class="content-card content-card-spaced">
+        <h2>Abonelik neleri kapsar</h2>
+        <p>iCloud Yedekleme, Momena verilerinizin şifreli bir kopyasını kendi iCloud hesabınızda saklamanızı sağlar; böylece cihaz değiştirdiğinizde geri yükleyebilirsiniz. Temel özellikler (anılar, takvim, cihazda sağlık takibi) abonelik gerektirmez.</p>
+        <p>Fiyatlar uygun olduğunda yerel para biriminizde gösterilir; Apple vergi veya yuvarlamadan sonra biraz farklı bir fiyat gösterebilir. Aboneliği yönetmek veya iptal etmek Apple Kimliği ayarlarından yapılır.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>Sorular</h2>
+        <p><a href="#support">Destek</a> sayfamıza bakın veya e-posta: <a href="mailto:serdarbakirtas@pm.me">serdarbakirtas@pm.me</a>.</p>
+      </div>
     </div>
   </section>
 
-  <section class="showcase">
-    <h2>Aileniz, tek uygulama</h2>
-    <p class="subtitle">Anılar, takvim, sağlık—hepsi uyum içinde.</p>
-    <div class="phones">
-      <div class="phone-wrap">
-        <div class="phone-frame">
-          <img src="../assets/images/iphone/IMG_3620.png" alt="Momena Home" />
-        </div>
+  <section id="our-story" class="page-section page-anchor-block" aria-labelledby="our-story-title">
+    <div class="page-main">
+      <h1 class="page-title" id="our-story-title">Hikayemiz</h1>
+      <p class="page-lead">Momena, yoğun ebeveynlerin uygulamalar arasında daha az vakit geçirmesi—aileyle daha çok vakit geçirmesi için var.</p>
+
+      <div class="content-card">
+        <h2>Neden Momena</h2>
+        <p>Aile hayatı pek çok an üretir: ilk adımlar, doktor ziyaretleri, doğum günleri, günlük fotoğraflar. Bu anılar çoğu zaman albüm, takvim ve notlara dağılır. Gizliliğinize saygı duyan tek bir sakin alan istedik: cihazınızda şifreli, isteğe bağlı iCloud Yedekleme ile.</p>
       </div>
-      <div class="phone-wrap">
-        <div class="phone-frame">
-          <img src="../assets/images/iphone/IMG_3621.png" alt="Momena Home" />
-        </div>
+
+      <div class="content-card">
+        <h2>Nelere inanıyoruz</h2>
+        <ul>
+          <li>Aile verileriniz size aittir—reklamcıların ürünü değildir.</li>
+          <li>Güvenlik varsayılan olmalı: güçlü şifreleme, net seçenekler.</li>
+          <li>Aile yazılımı, günün sonunda yorgunken bile kullanımı kolay olmalıdır.</li>
+        </ul>
       </div>
-      <div class="phone-wrap">
-        <div class="phone-frame">
-          <img src="../assets/images/iphone/IMG_3622.png" alt="Momena Home" />
-        </div>
-      </div>
-      <div class="phone-wrap">
-        <div class="phone-frame">
-          <img src="../assets/images/iphone/IMG_3623.png" alt="Momena Home" />
-        </div>
-      </div>
-      <div class="phone-wrap">
-        <div class="phone-frame">
-          <img src="../assets/images/iphone/IMG_3625.png" alt="Momena Home" />
-        </div>
-      </div>
-      <div class="phone-wrap">
-        <div class="phone-frame">
-          <img src="../assets/images/iphone/IMG_3624.png" alt="Momena Home" />
-        </div>
-      </div>
-      <div class="phone-wrap">
-        <div class="phone-frame">
-          <img src="../assets/images/iphone/IMG_3626.png" alt="Momena Home" />
-        </div>
-      </div>
-      <div class="phone-wrap">
-        <div class="phone-frame">
-          <img src="../assets/images/iphone/IMG_3627.png" alt="Momena Home" />
-        </div>
-      </div>
-      <div class="phone-wrap">
-        <div class="phone-frame">
-          <img src="../assets/images/iphone/IMG_3628.png" alt="Momena Home" />
-        </div>
-      </div>
-      <div class="phone-wrap">
-        <div class="phone-frame">
-          <img src="../assets/images/iphone/IMG_3629.png" alt="Momena Home" />
-        </div>
-      </div>
-      <div class="phone-wrap">
-        <div class="phone-frame">
-          <img src="../assets/images/iphone/IMG_3630.png" alt="Momena Home" />
-        </div>
-      </div>
-      <div class="phone-wrap">
-        <div class="phone-frame">
-          <img src="../assets/images/iphone/IMG_3631.png" alt="Momena Home" />
-        </div>
+
+      <div class="content-card">
+        <h2>Nereye gidiyoruz</h2>
+        <p>Gerçek aile rutinleri için Momena’yı daha faydalı kılmaya odaklanıyoruz—bize duyduğunuz güveni zedelemeden. Güncellemeler için <a href="#blog">blogu</a> takip edin veya <a href="#support">Support</a> üzerinden yazın.</p>
       </div>
     </div>
   </section>
 
-  <section class="features">
-    <h2>Aileler için</h2>
-    <div class="features-grid">
-      <div class="feature-card">
-        <h3>Anılar</h3>
-        <p>Fotoğraf, video ve notlar. En güzel anları zaman çizelgesinde toplayın.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Etkinlikler ve takvim</h3>
-        <p>Doğum günleri, randevular, aşılar—önemli tarihleri kaçırmayın.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Sağlık takibi</h3>
-        <p>Boy, kilo, uyku, semptomlar. Kayıtlar güvenli bir yerde.</p>
+  <section id="blog" class="page-section page-anchor-block" aria-labelledby="blog-title">
+    <div class="page-main wide">
+      <h1 class="page-title" id="blog-title">Blog</h1>
+      <p class="page-lead">Ürün güncellemeleri, gizlilik notları ve aile hayatını düzenlemeye dair fikirler.</p>
+
+      <ul class="blog-preview-grid" role="list">
+        <li>
+          <article class="blog-card">
+            <a class="blog-card__shell" href="../blog/welcome-to-the-momena-blog.html">
+              <span class="blog-card__badge blog-card__badge--product-updates">Product Updates</span>
+              <h2 class="blog-card__title">Momena bloguna hoş geldiniz</h2>
+              <p class="blog-card__meta">
+                <time datetime="2026-04-04">4 Nisan 2026</time>
+                <span class="blog-card__meta-sep" aria-hidden="true">·</span>
+                <span>2 dk okuma</span>
+              </p>
+              <p class="blog-card__excerpt">
+                Momena’nın nasıl geliştiğini, gizliliğe nasıl baktığımızı ve anıları dağınıklık olmadan yakalamak için pratik ipuçlarını paylaşıyoruz—verileriniz her zaman sizin kontrolünüzde.
+              </p>
+              <span class="blog-card__cta">Devamını oku</span>
+            </a>
+          </article>
+        </li>
+        <li>
+          <article class="blog-card">
+            <a class="blog-card__shell" href="../blog/why-local-first-matters.html">
+              <span class="blog-card__badge blog-card__badge--engineering">Engineering</span>
+              <h2 class="blog-card__title">Aileler için “önce yerel” neden önemli</h2>
+              <p class="blog-card__meta">
+                <time datetime="2026-04-04">4 Nisan 2026</time>
+                <span class="blog-card__meta-sep" aria-hidden="true">·</span>
+                <span>2 dk okuma</span>
+              </p>
+              <p class="blog-card__excerpt">
+                Birçok uygulama fotoğraf ve notları varsayılan olarak yükler. Momena anıları ve sağlık notlarını cihazda şifreli tutar; isteğe bağlı iCloud Yedekleme kendi hesabınızda.
+              </p>
+              <span class="blog-card__cta">Devamını oku</span>
+            </a>
+          </article>
+        </li>
+      </ul>
+
+      <div class="blog-preview-actions">
+        <a class="btn btn-secondary btn-sm" href="../blog/index.html">Tüm yazılar</a>
       </div>
     </div>
   </section>
 
-  <section class="security">
-    <h2>Önce güvenlik</h2>
-    <p class="subtitle">Aile verileriniz gizli ve korunur.</p>
-    <div class="security-grid">
-      <div class="security-card">
-        <div class="icon" aria-hidden="true">🔒</div>
-        <h3>AES-256 şifreleme</h3>
-        <p>Hassas veriler AES-256-GCM ile şifrelenir. Anahtarlar iOS Anahtarlık’ta saklanır.</p>
+  <section id="support" class="page-section page-anchor-block" aria-labelledby="support-title">
+    <div class="page-main">
+      <h1 class="page-title" id="support-title">Support</h1>
+      <p class="page-lead">Momena, abonelikler ve gizlilik sorularında yardımcı olmak için buradayız.</p>
+
+      <div class="content-card">
+        <h2>İletişim</h2>
+        <p><a href="mailto:serdarbakirtas@pm.me">serdarbakirtas@pm.me</a> adresine yazın. Her mesajı okuyoruz; genelde birkaç iş günü içinde yanıtlıyoruz.</p>
       </div>
-      <div class="security-card">
-        <div class="icon" aria-hidden="true">🛡️</div>
-        <h3>Varsayılan olarak cihazda</h3>
-        <p>Veriler cihazınızda kalır. İsteğe bağlı iCloud Yedekleme dışında bulut gerekmez.</p>
+
+      <div class="content-card">
+        <h2>Abonelikler ve faturalandırma</h2>
+        <p>Momena abonelikleri (isteğe bağlı iCloud Yedekleme) Apple üzerinden alınır. Yönetmek veya iptal etmek için iPhone veya iPad’de Ayarlar’ı açın, adınıza dokunun, ardından Abonelikler. Ödemeler ve iadeler Apple politikalarına tabidir.</p>
+        <p>Bu sitedeki liste fiyatları: <a href="#pricing">aylık €3,99</a> ve <a href="#pricing">yıllık €34,99</a>—App Store’daki nihai fiyat bölge veya vergiye göre değişebilir.</p>
       </div>
-      <div class="security-card">
-        <div class="icon" aria-hidden="true">☁️</div>
-        <h3>Şifreli iCloud yedekleme</h3>
-        <p>Etkinleştirildiğinde yedekler iCloud’unuzda şifreli saklanır—verilerinizi görmeyiz.</p>
+
+      <div class="content-card">
+        <h2>Gizlilik ve veri</h2>
+        <p>Momena’nın hangi verileri nasıl kullandığı için <a href="#privacy-policy">Gizlilik politikası</a>na bakın. Kullanım şartları: <a href="#terms-of-service">Kullanım şartları</a>.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>Yedekler ve cihazlar</h2>
+        <p>Yerel depolama abonelik olmadan çalışır. iCloud Yedekleme isteğe bağlıdır ve Apple Kimliğinizin iCloud’unu kullanır. Geri yükleme beklendiği gibi olmazsa bize cihaz modeli ve iOS sürümüyle yazın (kişisel sağlık veya anı içeriği göndermeniz gerekmez).</p>
       </div>
     </div>
   </section>
 
-  <section class="faq">
-    <h2>Sıkça sorulan sorular</h2>
-    <p class="subtitle">Başka sorunuz mu var? <a href="mailto:serdarbakirtas@pm.me">serdarbakirtas@pm.me</a> adresine yazın.</p>
-    <div class="faq-list">
-      <details class="faq-item">
-        <summary class="faq-question">Momena’yı diğer aile uygulamalarından ayıran nedir?</summary>
-        <p class="faq-answer">Momena anıları, takvimi ve sağlığı tek uygulamada birleştirir. Verileriniz varsayılan olarak AES-256 ile cihazınızda kalır—isteğe bağlı iCloud Yedekleme hariç bulut gerekmez. Verilerinizi satmıyor veya reklam için kullanmıyoruz.</p>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-question">Momena için ödeme yapmam gerekir mi?</summary>
-        <p class="faq-answer">Yerel kullanım ücretsizdir. iCloud Yedekleme isteğe bağlıdır—yalnızca cihaz değişiminde yedek isterseniz ödersiniz.</p>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-question">Momena çevrimdışı çalışır mı?</summary>
-        <p class="faq-answer">Evet. Tüm veriler cihazınızda. Uygulama çevrimdışı çalışır. iCloud etkinse bağlantıda senkron olur; temel özellikler internet istemez.</p>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-question">Verilerim ne kadar güvenli?</summary>
-        <p class="faq-answer">Hassas veriler AES-256-GCM ile şifrelenir. Anahtarlar iOS Anahtarlık’tadır. Kendi sunucularımız yok—veriler cihazda veya iCloud’unuzda kalır.</p>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-question">Verilerimi dışa aktarabilir veya silebilir miyim?</summary>
-        <p class="faq-answer">Evet. İstediğiniz zaman dışa aktarın, ayarlardan silin, yedeklemeyi yönetin.</p>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-question">Hangi cihazlarda çalışır?</summary>
-        <p class="faq-answer">Momena iPhone ve iPad için App Store’da. iOS güvenlik özelliklerini kullanır.</p>
-      </details>
+  <section id="privacy-policy" class="page-section page-anchor-block" aria-labelledby="privacy-policy-title">
+    <div class="page-main">
+      <h1 class="page-title" id="privacy-policy-title">Gizlilik politikası</h1>
+      <p class="page-lead">Son güncelleme: 18 Mart 2026</p>
+
+      <div class="content-card">
+        <h2>1. Information We Collect</h2>
+        <p>Momena collects and stores the following information:</p>
+        <ul>
+          <li>Personal information about your family members (names, birthdates, email addresses, photos)</li>
+          <li>Memories including photos, videos, notes, and dates</li>
+          <li>Calendar events with associated media and location data</li>
+          <li>Health data including height, weight, temperature, sleep records, and symptoms</li>
+        </ul>
+        <p>By default, this data is stored locally on your device. If you enable iCloud Backup (a subscription feature), a copy of your app data may be uploaded to and stored in your iCloud account to support backup and restore.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>2. Data Storage and Security</h2>
+        <ul>
+          <li>All sensitive data is encrypted at rest using industry-standard AES-256-GCM encryption</li>
+          <li>Encryption keys are stored securely in iOS Keychain</li>
+          <li>Data is protected by iOS Data Protection API</li>
+          <li>We do not operate our own cloud storage or backup servers for your personal data</li>
+          <li>Local storage and on-device usage do not require a subscription</li>
+          <li>If you choose to enable iCloud Backup, your data may be transmitted to and stored in Apple's iCloud services under your Apple ID</li>
+          <li>You can export backup files locally at your discretion</li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h2>3. Data Usage</h2>
+        <ul>
+          <li>Your data is used solely within the app to provide family memory management and health tracking features</li>
+          <li>We do not share or sell your data to third parties</li>
+          <li>We do not use your data for advertising, analytics, or tracking purposes</li>
+          <li>If you enable iCloud Backup, Apple processes and stores the backup in your iCloud account to provide backup/restore functionality</li>
+          <li>Subscriptions are processed by Apple via the App Store; we do not receive your payment details</li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h2>4. iCloud Backup (Subscription Feature)</h2>
+        <p>Momena supports two backup approaches:</p>
+        <ul>
+          <li>On-device (local): available without a subscription</li>
+          <li>iCloud Backup: available with an active subscription and only if you enable it in the app</li>
+        </ul>
+        <p>When iCloud Backup is enabled, a copy of your app data may be uploaded to and stored in your iCloud account so you can restore it (for example, when you change devices). You can disable iCloud Backup at any time in the app.</p>
+        <p>Apple's handling of data in iCloud is governed by Apple's terms and privacy policy.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>5. Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+          <li>Access all your data stored in the app</li>
+          <li>Export your data at any time</li>
+          <li>Delete all your data through the app settings</li>
+          <li>Control backup and restore operations</li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h2>6. Children's Privacy</h2>
+        <p>Momena is designed for families to manage their memories. We do not collect any information from children directly, and all data management is controlled by the device owner. If iCloud Backup is enabled, data may be stored in the device owner's iCloud account.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>7. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date at the top of this policy. You are advised to review this Privacy Policy periodically for any changes.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>8. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, you may contact us at <a href="mailto:serdarbakirtas@pm.me">serdarbakirtas@pm.me</a>.</p>
+      </div>
     </div>
   </section>
+
+  <section id="terms-of-service" class="page-section page-anchor-block" aria-labelledby="terms-of-service-title">
+    <div class="page-main">
+      <h1 class="page-title" id="terms-of-service-title">Kullanım şartları</h1>
+      <p class="page-lead">Son güncelleme: 4 Nisan 2026</p>
+
+      <div class="content-card">
+        <h2>1. Agreement</h2>
+        <p>These Terms of Service (“Terms”) govern your use of the Momena mobile application (“App”) and related website operated by us (“we”, “us”). By downloading, accessing, or using the App or website, you agree to these Terms. If you do not agree, do not use the App or website.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>2. The service</h2>
+        <p>Momena helps you organize family memories, calendar information, and health-related records on supported Apple devices. Features may change as we improve the product. We do not guarantee uninterrupted or error-free operation.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>3. Eligibility and accounts</h2>
+        <p>The App is intended for use by adults or under the supervision of a parent or guardian who manages the device. You are responsible for activity that occurs on your device and for complying with Apple’s terms when you obtain the App from the App Store.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>4. Subscriptions and payments</h2>
+        <p>Optional paid features (such as iCloud Backup) are offered as auto-renewing subscriptions where available. Payment, renewal, and cancellation are processed by Apple. Subscription prices communicated on our website (for example €3,99 monthly and €34,99 yearly) are indicative; the App Store shows the price that applies to your account and region. Refund requests follow Apple’s policies.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>5. Your content</h2>
+        <p>You retain ownership of content you add to Momena. You grant us only the limited rights needed to provide the service on your device (and, if you enable iCloud Backup, to sync via Apple’s iCloud under your Apple ID). You are responsible for the legality of your content and for not uploading unlawful or infringing material.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>6. Acceptable use</h2>
+        <p>You agree not to misuse the App or website—for example, by attempting to access others’ data without permission, reverse engineering the App to circumvent security, or using the service to violate applicable law. We may suspend or terminate access if we reasonably believe you have breached these Terms.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>7. Disclaimers</h2>
+        <p>The App is provided “as is” to the maximum extent permitted by law. Momena is not a medical device and does not replace professional medical advice. Health-related features are for personal organization only.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>8. Limitation of liability</h2>
+        <p>To the fullest extent permitted by applicable law, we are not liable for indirect, incidental, special, consequential, or punitive damages, or for any loss of profits, data, or goodwill, arising from your use of the App or website. Our total liability for any claim relating to these Terms or the service is limited to the amount you paid us in the twelve months before the claim (if any), or fifty euros (€50), whichever is greater, except where such limitation is not allowed by law.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>9. Changes</h2>
+        <p>We may update these Terms from time to time. We will post the revised date at the top of this page. Continued use after changes constitutes acceptance of the updated Terms where permitted by law.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>10. Contact</h2>
+        <p>Bu şartlar hakkında sorular: <a href="mailto:serdarbakirtas@pm.me">serdarbakirtas@pm.me</a>. Gizlilik uygulamaları için <a href="#privacy-policy">Gizlilik politikası</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cookies-policy" class="page-section page-anchor-block" aria-labelledby="cookies-policy-title">
+    <div class="page-main">
+      <h1 class="page-title" id="cookies-policy-title">Çerez politikası</h1>
+      <p class="page-lead">Son güncelleme: 18 Mart 2026</p>
+
+      <div class="content-card">
+        <h2>1. What Are Cookies?</h2>
+        <p>Cookies are small text files stored on your device when you visit a website. They help websites remember your preferences and improve your experience. We also use similar technologies such as localStorage to store your cookie consent choice.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>2. How We Use Cookies</h2>
+        <p>This website uses a minimal set of cookies and local storage:</p>
+        <ul>
+          <li><strong>Consent preference:</strong> We store your choice (Accept or Reject) in your browser's localStorage so we don't show the cookie banner again. This is essential for the consent mechanism to work.</li>
+          <li><strong>Google Fonts:</strong> We load fonts from Google Fonts. Google may set cookies when fonts are requested. You can review Google's privacy policy for details.</li>
+        </ul>
+        <p>We do not use:</p>
+        <ul>
+          <li>Advertising or tracking cookies</li>
+          <li>Analytics cookies</li>
+          <li>Third-party marketing cookies</li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h2>3. Your Choices</h2>
+        <p>You can accept or reject non-essential cookies using our cookie banner. If you reject, we will only use storage necessary to remember your rejection.</p>
+        <p>You can change your preference at any time by clicking "Cookie preferences" in the footer, which will show the consent banner again.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>4. Contact Us</h2>
+        <p>If you have questions about our use of cookies, contact us at <a href="mailto:serdarbakirtas@pm.me">serdarbakirtas@pm.me</a>.</p>
+      </div>
+    </div>
+  </section>
+  </main>
 
   <footer class="footer-site">
     <div class="footer-grid">
       <div class="footer-col">
         <h3>Gezinme</h3>
         <ul>
-          <li><a href="./">Ana sayfa</a></li>
-          <li><a href="pricing/">Fiyatlandırma</a></li>
-          <li><a href="our-story/">Hikayemiz</a></li>
-          <li><a href="blog/">Blog</a></li>
-          <li><a href="support/">Support</a></li>
+          <li><a href="#home">Ana sayfa</a></li>
+          <li><a href="#pricing">Fiyatlandırma</a></li>
+          <li><a href="#our-story">Hikayemiz</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#support">Support</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h3>Yasal</h3>
         <ul>
-          <li><a href="privacy-policy/">Gizlilik politikası</a></li>
-          <li><a href="terms-of-service/">Kullanım şartları</a></li>
+          <li><a href="#privacy-policy">Gizlilik politikası</a></li>
+          <li><a href="#terms-of-service">Kullanım şartları</a></li>
         </ul>
       </div>
     </div>
@@ -289,7 +630,7 @@
     </div>
     <div class="footer-bottom">
       <p>
-        <a href="cookies-policy/">Çerez politikası</a>
+        <a href="#cookies-policy">Çerez politikası</a>
         <span aria-hidden="true"> · </span>
         <a href="#" id="cookie-prefs">Çerez tercihleri</a>
       </p>
@@ -312,16 +653,17 @@
 
   <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Çerez onayı">
     <div class="cookie-banner-inner">
-      <p class="cookie-banner-text">Tercihlerinizi hatırlamak için çerez ve yerel depolama kullanıyoruz. Devam ederek çerez kullanımını kabul edersiniz. <a href="cookies-policy/">Learn more</a></p>
+      <p class="cookie-banner-text">Tercihlerinizi hatırlamak için çerez ve yerel depolama kullanıyoruz. Devam ederek çerez kullanımını kabul edersiniz. <a href="#cookies-policy">Daha fazla bilgi</a></p>
       <div class="cookie-banner-actions">
         <button type="button" class="cookie-btn cookie-btn-accept">Kabul et</button>
         <button type="button" class="cookie-btn cookie-btn-reject">Reddet</button>
-        <a href="cookies-policy/" class="cookie-link">Çerez politikası</a>
+        <a href="#cookies-policy" class="cookie-link">Çerez politikası</a>
       </div>
     </div>
   </div>
 
   <script src="../assets/js/cookies.js"></script>
   <script src="../assets/js/footer.js"></script>
+  <script src="../assets/js/spa-nav.js"></script>
 </body>
 </html>

@@ -19,14 +19,14 @@
   <meta property="og:locale" content="de_DE" />
   <meta property="og:site_name" content="Momena" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Momena – Family memories, calendar &amp; health in one app" />
-  <meta property="og:description" content="Momena helps families organize memories, events, and health records in one simple, private iOS app. Encrypted on-device; optional iCloud backup." />
+  <meta property="og:title" content="Momena – Familienerinnerungen, Kalender &amp; Gesundheit in einer App" />
+  <meta property="og:description" content="Momena hilft Familien, Erinnerungen, Termine und Gesundheitsdaten in einer einfachen, privaten iOS-App zu organisieren. Verschlüsselt auf dem Gerät; optionales iCloud-Backup." />
   <meta property="og:url" content="https://momena.app/de/" />
   <meta property="og:image" content="https://momena.app/assets/images/MomenaLogo.png" />
   <meta property="og:image:alt" content="Momena – family organizer app logo" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Momena – Family memories, calendar &amp; health in one app" />
-  <meta name="twitter:description" content="Organize memories, events, and health records in one private iOS app." />
+  <meta name="twitter:title" content="Momena – Familienerinnerungen, Kalender &amp; Gesundheit in einer App" />
+  <meta name="twitter:description" content="Erinnerungen, Termine und Gesundheitsdaten in einer privaten iOS-App organisieren." />
   <meta name="twitter:image" content="https://momena.app/assets/images/MomenaLogo.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png" />
@@ -56,7 +56,7 @@
         "@id": "https://momena.app/#website",
         "url": "https://momena.app/",
         "name": "Momena",
-        "description": "Family memories, calendar, and health records in one private iOS app.",
+        "description": "Familienerinnerungen, Kalender und Gesundheitsdaten in einer privaten iOS-App.",
         "publisher": { "@id": "https://momena.app/#organization" },
         "inLanguage": "de"
       },
@@ -67,24 +67,51 @@
         "operatingSystem": "iOS",
         "isAccessibleForFree": true,
         "url": "https://apps.apple.com/us/app/familyakit/id6758870737"
+      },
+      {
+        "@type": "Blog",
+        "name": "Momena Blog",
+        "url": "https://momena.app/blog/",
+        "description": "Neuigkeiten und Tipps vom Momena-Team.",
+        "publisher": { "@id": "https://momena.app/#organization" },
+        "blogPost": [
+          {
+            "@type": "BlogPosting",
+            "headline": "Welcome to the Momena blog",
+            "datePublished": "2026-04-04",
+            "url": "https://momena.app/blog/welcome-to-the-momena-blog.html"
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "Why local-first matters for families",
+            "datePublished": "2026-04-04",
+            "url": "https://momena.app/blog/why-local-first-matters.html"
+          }
+        ]
       }
     ]
   }
   </script>
 </head>
 <body oncontextmenu="return false;">
+  <a class="skip-link" href="#home">Zum Inhalt springen</a>
   <header class="header">
     <div class="header-bar">
       <div class="header-inner">
-        <a class="logo-header" href="./">
-          <img src="../assets/images/MomenaLogo.png" alt="Momena" />
+        <a class="logo-header" href="#home">
+          <img src="../assets/images/MomenaLogo.png" alt="Momena" width="36" height="36" />
           <span>Momena</span>
         </a>
-        <nav class="nav-links" aria-label="Primary">
-          <a href="pricing/">Preise</a>
-          <a href="our-story/">Unsere Geschichte</a>
-          <a href="blog/">Blog</a>
-          <a href="support/">Support</a>
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="visually-hidden">Menü</span>
+          <span class="nav-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+        <nav id="primary-navigation" class="nav-links" aria-label="Hauptnavigation">
+          <a href="#home" class="is-active" data-nav-target="home" aria-current="location">Start</a>
+          <a href="#pricing" data-nav-target="pricing">Preise</a>
+          <a href="#our-story" data-nav-target="our-story">Unsere Geschichte</a>
+          <a href="#blog" data-nav-target="blog">Blog</a>
+          <a href="#support" data-nav-target="support">Support</a>
         </nav>
       </div>
       <a
@@ -100,173 +127,487 @@
     </div>
   </header>
 
-  <section class="hero">
-    <img class="hero-logo" src="../assets/images/MomenaLogo.png" alt="Momena" />
-    <h1>Verpassen Sie keine Familienmomente mehr.<br />Organisieren Sie wie ein Profi.</h1>
-    <p class="lead">
-      Erinnerungen, Termine und Gesundheitsdaten an einem Ort. Wachstum, Schlaf und Arzttermine im Blick—für Familien gemacht.
-    </p>
-    <div class="actions">
-      <a class="btn btn-primary" href="https://apps.apple.com/us/app/familyakit/id6758870737">Im App Store laden</a>
-      <a class="btn btn-secondary" href="pricing/">Preise</a>
+  <main id="main-content">
+  <div id="home" class="page-anchor-block" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-heading">
+      <img class="hero-logo" src="../assets/images/MomenaLogo.png" alt="" width="160" height="160" />
+      <h1 id="hero-heading">Verpassen Sie keine Familienmomente mehr.<br />Organisieren Sie wie ein Profi.</h1>
+      <p class="lead">
+        Erinnerungen, Termine und Gesundheitsdaten an einem Ort. Wachstum, Schlaf und Arzttermine im Blick—für Familien gemacht.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://apps.apple.com/us/app/familyakit/id6758870737">Im App Store laden</a>
+        <a class="btn btn-secondary" href="#pricing">Preise</a>
+      </div>
+    </section>
+
+    <section class="showcase" aria-labelledby="showcase-heading">
+      <h2 id="showcase-heading">Ihre Familie, eine App</h2>
+      <p class="subtitle">Erinnerungen, Kalender, Gesundheit—alles im Einklang.</p>
+      <div class="phones">
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <img src="../assets/images/iphone/IMG_3620.png" alt="Momena Home" />
+          </div>
+        </div>
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <img src="../assets/images/iphone/IMG_3621.png" alt="Momena Home" />
+          </div>
+        </div>
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <img src="../assets/images/iphone/IMG_3622.png" alt="Momena Home" />
+          </div>
+        </div>
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <img src="../assets/images/iphone/IMG_3623.png" alt="Momena Home" />
+          </div>
+        </div>
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <img src="../assets/images/iphone/IMG_3625.png" alt="Momena Home" />
+          </div>
+        </div>
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <img src="../assets/images/iphone/IMG_3624.png" alt="Momena Home" />
+          </div>
+        </div>
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <img src="../assets/images/iphone/IMG_3626.png" alt="Momena Home" />
+          </div>
+        </div>
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <img src="../assets/images/iphone/IMG_3627.png" alt="Momena Home" />
+          </div>
+        </div>
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <img src="../assets/images/iphone/IMG_3628.png" alt="Momena Home" />
+          </div>
+        </div>
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <img src="../assets/images/iphone/IMG_3629.png" alt="Momena Home" />
+          </div>
+        </div>
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <img src="../assets/images/iphone/IMG_3630.png" alt="Momena Home" />
+          </div>
+        </div>
+        <div class="phone-wrap">
+          <div class="phone-frame">
+            <img src="../assets/images/iphone/IMG_3631.png" alt="Momena Home" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" aria-labelledby="features-heading">
+      <h2 id="features-heading">Für Familien gebaut</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>Erinnerungen</h3>
+          <p>Fotos, Videos und Notizen speichern. Die schönsten Momente als Zeitleiste.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Termine &amp; Kalender</h3>
+          <p>Geburtstage, Arzttermine, Impfungen—wichtige Daten nicht mehr verpassen.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Gesundheit</h3>
+          <p>Größe, Gewicht, Schlaf, Symptome. Wichtige Daten an einem sicheren Ort.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="security" aria-labelledby="security-heading">
+      <h2 id="security-heading">Sicherheit zuerst</h2>
+      <p class="subtitle">Ihre Familiendaten bleiben privat und geschützt.</p>
+      <div class="security-grid">
+        <div class="security-card">
+          <div class="icon" aria-hidden="true">🔒</div>
+          <h3>AES-256-Verschlüsselung</h3>
+          <p>Sensible Daten werden mit AES-256-GCM verschlüsselt. Schlüssel liegen im iOS-Schlüsselbund.</p>
+        </div>
+        <div class="security-card">
+          <div class="icon" aria-hidden="true">🛡️</div>
+          <h3>Standardmäßig auf dem Gerät</h3>
+          <p>Daten bleiben auf Ihrem Gerät. Keine Cloud nötig, außer Sie aktivieren optional iCloud-Backup.</p>
+        </div>
+        <div class="security-card">
+          <div class="icon" aria-hidden="true">☁️</div>
+          <h3>Verschlüsseltes iCloud-Backup</h3>
+          <p>Aktiviert werden Backups verschlüsselt in Ihrer iCloud gespeichert—wir sehen Ihre Daten nicht.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Häufige Fragen</h2>
+      <p class="subtitle">Andere Frage? Schreiben Sie uns an <a href="mailto:serdarbakirtas@pm.me">serdarbakirtas@pm.me</a>.</p>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-question">Was unterscheidet Momena von anderen Familien-Apps?</summary>
+          <p class="faq-answer">Momena vereint Erinnerungen, Kalender und Gesundheit in einer App. Ihre Daten bleiben standardmäßig auf dem Gerät mit AES-256—ohne Cloud, außer Sie aktivieren optional iCloud-Backup. Wir verkaufen Ihre Daten nicht und nutzen sie nicht für Werbung.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Muss ich für Momena bezahlen?</summary>
+          <p class="faq-answer">Lokale Speicherung ist kostenlos. iCloud-Backup ist optional kostenpflichtig—Sie zahlen nur, wenn Sie Daten in Ihrer iCloud sichern möchten.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Funktioniert Momena offline?</summary>
+          <p class="faq-answer">Ja. Alle Daten liegen lokal auf Ihrem Gerät. Die App funktioniert offline. iCloud-Backup synchronisiert bei Verbindung; Kernfunktionen brauchen kein Internet.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Wie sicher sind unsere Daten?</summary>
+          <p class="faq-answer">Sensible Daten sind mit AES-256-GCM verschlüsselt. Schlüssel liegen im iOS-Schlüsselbund. Wir betreiben keine eigenen Server—Ihre Daten bleiben auf dem Gerät oder in Ihrer iCloud.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Kann ich Daten exportieren oder löschen?</summary>
+          <p class="faq-answer">Ja. Export jederzeit, Löschen in den App-Einstellungen, volle Kontrolle über Backup und Wiederherstellung.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Auf welchen Geräten läuft Momena?</summary>
+          <p class="faq-answer">Momena gibt es für iPhone und iPad im App Store. Nutzt Apples Sicherheitsfunktionen wie Schlüsselbund und Data Protection.</p>
+        </details>
+      </div>
+    </section>
+  </div>
+
+  <section id="pricing" class="page-section page-anchor-block" aria-labelledby="pricing-title">
+    <div class="page-main wide">
+      <h1 class="page-title" id="pricing-title">Preise</h1>
+      <p class="page-lead">Optionales Abo für iCloud-Backup. Die lokale Nutzung von Momena bleibt kostenlos.</p>
+
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <h2>Monatlich</h2>
+          <div class="price">€3,99</div>
+          <p class="period">pro Monat</p>
+          <p class="subtext">Monatliche Abrechnung über den App Store. Jederzeit kündbar.</p>
+        </div>
+        <div class="pricing-card">
+          <h2>Jährlich</h2>
+          <div class="price">€34,99</div>
+          <p class="period">pro Jahr</p>
+          <p class="subtext">Bester Wert für Familien mit ganzjährigem Backup.</p>
+        </div>
+      </div>
+
+      <div class="content-card content-card-spaced">
+        <h2>Was das Abo beinhaltet</h2>
+        <p>iCloud Backup speichert eine verschlüsselte Kopie Ihrer Momena-Daten in Ihrem eigenen iCloud-Konto, damit Sie sie beim Gerätewechsel wiederherstellen können. Kernfunktionen (Erinnerungen, Kalender, Gesundheitsdaten auf dem Gerät) sind ohne Abonnement nutzbar.</p>
+        <p>Preise werden in Ihrer lokalen Währung berechnet, sofern zutreffend; Apple kann nach Steuern oder Rundung einen leicht abweichenden Preis anzeigen. Verwaltung oder Kündigung erfolgt in den Apple-ID-Einstellungen.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>Fragen</h2>
+        <p>Siehe <a href="#support">Support</a> oder E-Mail an <a href="mailto:serdarbakirtas@pm.me">serdarbakirtas@pm.me</a>.</p>
+      </div>
     </div>
   </section>
 
-  <section class="showcase">
-    <h2>Ihre Familie, eine App</h2>
-    <p class="subtitle">Erinnerungen, Kalender, Gesundheit—alles im Einklang.</p>
-    <div class="phones">
-      <div class="phone-wrap">
-        <div class="phone-frame">
-          <img src="../assets/images/iphone/IMG_3620.png" alt="Momena Home" />
-        </div>
+  <section id="our-story" class="page-section page-anchor-block" aria-labelledby="our-story-title">
+    <div class="page-main">
+      <h1 class="page-title" id="our-story-title">Unsere Geschichte</h1>
+      <p class="page-lead">Momena gibt es, damit gestresste Eltern weniger zwischen Apps wechseln—und mehr Zeit mit der Familie haben.</p>
+
+      <div class="content-card">
+        <h2>Warum Momena</h2>
+        <p>Im Familienalltag gibt es unzählige Momente: erste Schritte, Arzttermine, Geburtstage, alltägliche Fotos. Oft landen Erinnerungen verstreut in der Fotomediathek, im Kalender und in Notizen. Wir wollten einen ruhigen Ort, der Ihre Privatsphäre respektiert: verschlüsselt auf Ihrem Gerät, mit optionalem iCloud-Backup nach Ihrer Wahl.</p>
       </div>
-      <div class="phone-wrap">
-        <div class="phone-frame">
-          <img src="../assets/images/iphone/IMG_3621.png" alt="Momena Home" />
-        </div>
+
+      <div class="content-card">
+        <h2>Woran wir glauben</h2>
+        <ul>
+          <li>Ihre Familiendaten gehören Ihnen—nicht der Werbeindustrie.</li>
+          <li>Sicherheit sollte Standard sein: starke Verschlüsselung, klare Entscheidungen.</li>
+          <li>Software für Familien soll am Ende des Tages einfach bedienbar sein.</li>
+        </ul>
       </div>
-      <div class="phone-wrap">
-        <div class="phone-frame">
-          <img src="../assets/images/iphone/IMG_3622.png" alt="Momena Home" />
-        </div>
-      </div>
-      <div class="phone-wrap">
-        <div class="phone-frame">
-          <img src="../assets/images/iphone/IMG_3623.png" alt="Momena Home" />
-        </div>
-      </div>
-      <div class="phone-wrap">
-        <div class="phone-frame">
-          <img src="../assets/images/iphone/IMG_3625.png" alt="Momena Home" />
-        </div>
-      </div>
-      <div class="phone-wrap">
-        <div class="phone-frame">
-          <img src="../assets/images/iphone/IMG_3624.png" alt="Momena Home" />
-        </div>
-      </div>
-      <div class="phone-wrap">
-        <div class="phone-frame">
-          <img src="../assets/images/iphone/IMG_3626.png" alt="Momena Home" />
-        </div>
-      </div>
-      <div class="phone-wrap">
-        <div class="phone-frame">
-          <img src="../assets/images/iphone/IMG_3627.png" alt="Momena Home" />
-        </div>
-      </div>
-      <div class="phone-wrap">
-        <div class="phone-frame">
-          <img src="../assets/images/iphone/IMG_3628.png" alt="Momena Home" />
-        </div>
-      </div>
-      <div class="phone-wrap">
-        <div class="phone-frame">
-          <img src="../assets/images/iphone/IMG_3629.png" alt="Momena Home" />
-        </div>
-      </div>
-      <div class="phone-wrap">
-        <div class="phone-frame">
-          <img src="../assets/images/iphone/IMG_3630.png" alt="Momena Home" />
-        </div>
-      </div>
-      <div class="phone-wrap">
-        <div class="phone-frame">
-          <img src="../assets/images/iphone/IMG_3631.png" alt="Momena Home" />
-        </div>
+
+      <div class="content-card">
+        <h2>Wohin es geht</h2>
+        <p>Wir wollen Momena für echte Familienroutinen noch hilfreicher machen—ohne das Vertrauen zu enttäuschen. Folgen Sie dem <a href="#blog">Blog</a> oder schreiben Sie uns über <a href="#support">Support</a>.</p>
       </div>
     </div>
   </section>
 
-  <section class="features">
-    <h2>Für Familien gebaut</h2>
-    <div class="features-grid">
-      <div class="feature-card">
-        <h3>Erinnerungen</h3>
-        <p>Fotos, Videos und Notizen speichern. Die schönsten Momente als Zeitleiste.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Termine &amp; Kalender</h3>
-        <p>Geburtstage, Arzttermine, Impfungen—wichtige Daten nicht mehr verpassen.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Gesundheit</h3>
-        <p>Größe, Gewicht, Schlaf, Symptome. Wichtige Daten an einem sicheren Ort.</p>
+  <section id="blog" class="page-section page-anchor-block" aria-labelledby="blog-title">
+    <div class="page-main wide">
+      <h1 class="page-title" id="blog-title">Blog</h1>
+      <p class="page-lead">Produktupdates, Hinweise zum Datenschutz und Ideen für den Familienalltag.</p>
+
+      <ul class="blog-preview-grid" role="list">
+        <li>
+          <article class="blog-card">
+            <a class="blog-card__shell" href="../blog/welcome-to-the-momena-blog.html">
+              <span class="blog-card__badge blog-card__badge--product-updates">Product Updates</span>
+              <h2 class="blog-card__title">Willkommen im Momena-Blog</h2>
+              <p class="blog-card__meta">
+                <time datetime="2026-04-04">4. April 2026</time>
+                <span class="blog-card__meta-sep" aria-hidden="true">·</span>
+                <span>2 Min. Lesezeit</span>
+              </p>
+              <p class="blog-card__excerpt">
+                So entwickelt sich Momena weiter, wie wir Datenschutz sehen und welche Tipps Erinnerungen ohne Chaos helfen—immer mit Ihren Daten unter Ihrer Kontrolle.
+              </p>
+              <span class="blog-card__cta">Weiterlesen</span>
+            </a>
+          </article>
+        </li>
+        <li>
+          <article class="blog-card">
+            <a class="blog-card__shell" href="../blog/why-local-first-matters.html">
+              <span class="blog-card__badge blog-card__badge--engineering">Engineering</span>
+              <h2 class="blog-card__title">Warum „local-first“ für Familien zählt</h2>
+              <p class="blog-card__meta">
+                <time datetime="2026-04-04">4. April 2026</time>
+                <span class="blog-card__meta-sep" aria-hidden="true">·</span>
+                <span>2 Min. Lesezeit</span>
+              </p>
+              <p class="blog-card__excerpt">
+                Viele Apps laden Fotos und Notizen standardmäßig hoch. Momena hält Erinnerungen und Gesundheitsnotizen verschlüsselt auf dem Gerät, optional mit iCloud-Backup in Ihrem Konto.
+              </p>
+              <span class="blog-card__cta">Weiterlesen</span>
+            </a>
+          </article>
+        </li>
+      </ul>
+
+      <div class="blog-preview-actions">
+        <a class="btn btn-secondary btn-sm" href="../blog/index.html">Alle Beiträge</a>
       </div>
     </div>
   </section>
 
-  <section class="security">
-    <h2>Sicherheit zuerst</h2>
-    <p class="subtitle">Ihre Familiendaten bleiben privat und geschützt.</p>
-    <div class="security-grid">
-      <div class="security-card">
-        <div class="icon" aria-hidden="true">🔒</div>
-        <h3>AES-256-Verschlüsselung</h3>
-        <p>Sensible Daten werden mit AES-256-GCM verschlüsselt. Schlüssel liegen im iOS-Schlüsselbund.</p>
+  <section id="support" class="page-section page-anchor-block" aria-labelledby="support-title">
+    <div class="page-main">
+      <h1 class="page-title" id="support-title">Support</h1>
+      <p class="page-lead">Wir helfen bei Momena, Abonnements und Fragen zum Datenschutz.</p>
+
+      <div class="content-card">
+        <h2>Kontakt</h2>
+        <p>E-Mail an <a href="mailto:serdarbakirtas@pm.me">serdarbakirtas@pm.me</a>. Wir lesen jede Nachricht und antworten in der Regel innerhalb weniger Werktage.</p>
       </div>
-      <div class="security-card">
-        <div class="icon" aria-hidden="true">🛡️</div>
-        <h3>Standardmäßig auf dem Gerät</h3>
-        <p>Daten bleiben auf Ihrem Gerät. Keine Cloud nötig, außer Sie aktivieren optional iCloud-Backup.</p>
+
+      <div class="content-card">
+        <h2>Abonnements und Abrechnung</h2>
+        <p>Momena-Abonnements (für optionales iCloud-Backup) werden über Apple gekauft. Verwaltung oder Kündigung: Einstellungen auf iPhone oder iPad, auf Ihren Namen tippen, dann „Abonnements“. Zahlungen und Erstattungen richten sich nach Apples Richtlinien.</p>
+        <p>Listenpreise auf dieser Website: <a href="#pricing">€3,99 pro Monat</a> und <a href="#pricing">€34,99 pro Jahr</a>—der endgültige Preis im App Store kann je nach Region oder Steuer variieren.</p>
       </div>
-      <div class="security-card">
-        <div class="icon" aria-hidden="true">☁️</div>
-        <h3>Verschlüsseltes iCloud-Backup</h3>
-        <p>Aktiviert werden Backups verschlüsselt in Ihrer iCloud gespeichert—wir sehen Ihre Daten nicht.</p>
+
+      <div class="content-card">
+        <h2>Datenschutz und Daten</h2>
+        <p>Details in der <a href="#privacy-policy">Datenschutzerklärung</a>. Nutzungsbedingungen: <a href="#terms-of-service">Nutzungsbedingungen</a>.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>Backups und Geräte</h2>
+        <p>Lokale Speicherung funktioniert ohne Abo. iCloud-Backup ist optional und nutzt die iCloud Ihrer Apple-ID. Wenn die Wiederherstellung nicht klappt, schreiben Sie uns mit Gerätemodell und iOS-Version (keine persönlichen Gesundheits- oder Erinnerungsinhalte nötig).</p>
       </div>
     </div>
   </section>
 
-  <section class="faq">
-    <h2>Häufige Fragen</h2>
-    <p class="subtitle">Andere Frage? Schreiben Sie uns an <a href="mailto:serdarbakirtas@pm.me">serdarbakirtas@pm.me</a>.</p>
-    <div class="faq-list">
-      <details class="faq-item">
-        <summary class="faq-question">Was unterscheidet Momena von anderen Familien-Apps?</summary>
-        <p class="faq-answer">Momena vereint Erinnerungen, Kalender und Gesundheit in einer App. Ihre Daten bleiben standardmäßig auf dem Gerät mit AES-256—ohne Cloud, außer Sie aktivieren optional iCloud-Backup. Wir verkaufen Ihre Daten nicht und nutzen sie nicht für Werbung.</p>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-question">Muss ich für Momena bezahlen?</summary>
-        <p class="faq-answer">Lokale Speicherung ist kostenlos. iCloud-Backup ist optional kostenpflichtig—Sie zahlen nur, wenn Sie Daten in Ihrer iCloud sichern möchten.</p>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-question">Funktioniert Momena offline?</summary>
-        <p class="faq-answer">Ja. Alle Daten liegen lokal auf Ihrem Gerät. Die App funktioniert offline. iCloud-Backup synchronisiert bei Verbindung; Kernfunktionen brauchen kein Internet.</p>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-question">Wie sicher sind unsere Daten?</summary>
-        <p class="faq-answer">Sensible Daten sind mit AES-256-GCM verschlüsselt. Schlüssel liegen im iOS-Schlüsselbund. Wir betreiben keine eigenen Server—Ihre Daten bleiben auf dem Gerät oder in Ihrer iCloud.</p>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-question">Kann ich Daten exportieren oder löschen?</summary>
-        <p class="faq-answer">Ja. Export jederzeit, Löschen in den App-Einstellungen, volle Kontrolle über Backup und Wiederherstellung.</p>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-question">Auf welchen Geräten läuft Momena?</summary>
-        <p class="faq-answer">Momena gibt es für iPhone und iPad im App Store. Nutzt Apples Sicherheitsfunktionen wie Schlüsselbund und Data Protection.</p>
-      </details>
+  <section id="privacy-policy" class="page-section page-anchor-block" aria-labelledby="privacy-policy-title">
+    <div class="page-main">
+      <h1 class="page-title" id="privacy-policy-title">Datenschutz</h1>
+      <p class="page-lead">Zuletzt aktualisiert: 18. März 2026</p>
+
+      <div class="content-card">
+        <h2>1. Information We Collect</h2>
+        <p>Momena collects and stores the following information:</p>
+        <ul>
+          <li>Personal information about your family members (names, birthdates, email addresses, photos)</li>
+          <li>Memories including photos, videos, notes, and dates</li>
+          <li>Calendar events with associated media and location data</li>
+          <li>Health data including height, weight, temperature, sleep records, and symptoms</li>
+        </ul>
+        <p>By default, this data is stored locally on your device. If you enable iCloud Backup (a subscription feature), a copy of your app data may be uploaded to and stored in your iCloud account to support backup and restore.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>2. Data Storage and Security</h2>
+        <ul>
+          <li>All sensitive data is encrypted at rest using industry-standard AES-256-GCM encryption</li>
+          <li>Encryption keys are stored securely in iOS Keychain</li>
+          <li>Data is protected by iOS Data Protection API</li>
+          <li>We do not operate our own cloud storage or backup servers for your personal data</li>
+          <li>Local storage and on-device usage do not require a subscription</li>
+          <li>If you choose to enable iCloud Backup, your data may be transmitted to and stored in Apple's iCloud services under your Apple ID</li>
+          <li>You can export backup files locally at your discretion</li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h2>3. Data Usage</h2>
+        <ul>
+          <li>Your data is used solely within the app to provide family memory management and health tracking features</li>
+          <li>We do not share or sell your data to third parties</li>
+          <li>We do not use your data for advertising, analytics, or tracking purposes</li>
+          <li>If you enable iCloud Backup, Apple processes and stores the backup in your iCloud account to provide backup/restore functionality</li>
+          <li>Subscriptions are processed by Apple via the App Store; we do not receive your payment details</li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h2>4. iCloud Backup (Subscription Feature)</h2>
+        <p>Momena supports two backup approaches:</p>
+        <ul>
+          <li>On-device (local): available without a subscription</li>
+          <li>iCloud Backup: available with an active subscription and only if you enable it in the app</li>
+        </ul>
+        <p>When iCloud Backup is enabled, a copy of your app data may be uploaded to and stored in your iCloud account so you can restore it (for example, when you change devices). You can disable iCloud Backup at any time in the app.</p>
+        <p>Apple's handling of data in iCloud is governed by Apple's terms and privacy policy.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>5. Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+          <li>Access all your data stored in the app</li>
+          <li>Export your data at any time</li>
+          <li>Delete all your data through the app settings</li>
+          <li>Control backup and restore operations</li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h2>6. Children's Privacy</h2>
+        <p>Momena is designed for families to manage their memories. We do not collect any information from children directly, and all data management is controlled by the device owner. If iCloud Backup is enabled, data may be stored in the device owner's iCloud account.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>7. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date at the top of this policy. You are advised to review this Privacy Policy periodically for any changes.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>8. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, you may contact us at <a href="mailto:serdarbakirtas@pm.me">serdarbakirtas@pm.me</a>.</p>
+      </div>
     </div>
   </section>
+
+  <section id="terms-of-service" class="page-section page-anchor-block" aria-labelledby="terms-of-service-title">
+    <div class="page-main">
+      <h1 class="page-title" id="terms-of-service-title">Nutzungsbedingungen</h1>
+      <p class="page-lead">Zuletzt aktualisiert: 4. April 2026</p>
+
+      <div class="content-card">
+        <h2>1. Agreement</h2>
+        <p>These Terms of Service (“Terms”) govern your use of the Momena mobile application (“App”) and related website operated by us (“we”, “us”). By downloading, accessing, or using the App or website, you agree to these Terms. If you do not agree, do not use the App or website.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>2. The service</h2>
+        <p>Momena helps you organize family memories, calendar information, and health-related records on supported Apple devices. Features may change as we improve the product. We do not guarantee uninterrupted or error-free operation.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>3. Eligibility and accounts</h2>
+        <p>The App is intended for use by adults or under the supervision of a parent or guardian who manages the device. You are responsible for activity that occurs on your device and for complying with Apple’s terms when you obtain the App from the App Store.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>4. Subscriptions and payments</h2>
+        <p>Optional paid features (such as iCloud Backup) are offered as auto-renewing subscriptions where available. Payment, renewal, and cancellation are processed by Apple. Subscription prices communicated on our website (for example €3,99 monthly and €34,99 yearly) are indicative; the App Store shows the price that applies to your account and region. Refund requests follow Apple’s policies.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>5. Your content</h2>
+        <p>You retain ownership of content you add to Momena. You grant us only the limited rights needed to provide the service on your device (and, if you enable iCloud Backup, to sync via Apple’s iCloud under your Apple ID). You are responsible for the legality of your content and for not uploading unlawful or infringing material.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>6. Acceptable use</h2>
+        <p>You agree not to misuse the App or website—for example, by attempting to access others’ data without permission, reverse engineering the App to circumvent security, or using the service to violate applicable law. We may suspend or terminate access if we reasonably believe you have breached these Terms.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>7. Disclaimers</h2>
+        <p>The App is provided “as is” to the maximum extent permitted by law. Momena is not a medical device and does not replace professional medical advice. Health-related features are for personal organization only.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>8. Limitation of liability</h2>
+        <p>To the fullest extent permitted by applicable law, we are not liable for indirect, incidental, special, consequential, or punitive damages, or for any loss of profits, data, or goodwill, arising from your use of the App or website. Our total liability for any claim relating to these Terms or the service is limited to the amount you paid us in the twelve months before the claim (if any), or fifty euros (€50), whichever is greater, except where such limitation is not allowed by law.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>9. Changes</h2>
+        <p>We may update these Terms from time to time. We will post the revised date at the top of this page. Continued use after changes constitutes acceptance of the updated Terms where permitted by law.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>10. Contact</h2>
+        <p>Fragen zu diesen Bedingungen: <a href="mailto:serdarbakirtas@pm.me">serdarbakirtas@pm.me</a>. Hinweise zum Datenschutz: <a href="#privacy-policy">Datenschutz</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cookies-policy" class="page-section page-anchor-block" aria-labelledby="cookies-policy-title">
+    <div class="page-main">
+      <h1 class="page-title" id="cookies-policy-title">Cookie-Richtlinie</h1>
+      <p class="page-lead">Zuletzt aktualisiert: 18. März 2026</p>
+
+      <div class="content-card">
+        <h2>1. What Are Cookies?</h2>
+        <p>Cookies are small text files stored on your device when you visit a website. They help websites remember your preferences and improve your experience. We also use similar technologies such as localStorage to store your cookie consent choice.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>2. How We Use Cookies</h2>
+        <p>This website uses a minimal set of cookies and local storage:</p>
+        <ul>
+          <li><strong>Consent preference:</strong> We store your choice (Accept or Reject) in your browser's localStorage so we don't show the cookie banner again. This is essential for the consent mechanism to work.</li>
+          <li><strong>Google Fonts:</strong> We load fonts from Google Fonts. Google may set cookies when fonts are requested. You can review Google's privacy policy for details.</li>
+        </ul>
+        <p>We do not use:</p>
+        <ul>
+          <li>Advertising or tracking cookies</li>
+          <li>Analytics cookies</li>
+          <li>Third-party marketing cookies</li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h2>3. Your Choices</h2>
+        <p>You can accept or reject non-essential cookies using our cookie banner. If you reject, we will only use storage necessary to remember your rejection.</p>
+        <p>You can change your preference at any time by clicking "Cookie preferences" in the footer, which will show the consent banner again.</p>
+      </div>
+
+      <div class="content-card">
+        <h2>4. Contact Us</h2>
+        <p>If you have questions about our use of cookies, contact us at <a href="mailto:serdarbakirtas@pm.me">serdarbakirtas@pm.me</a>.</p>
+      </div>
+    </div>
+  </section>
+  </main>
 
   <footer class="footer-site">
     <div class="footer-grid">
       <div class="footer-col">
         <h3>Navigation</h3>
         <ul>
-          <li><a href="./">Start</a></li>
-          <li><a href="pricing/">Preise</a></li>
-          <li><a href="our-story/">Unsere Geschichte</a></li>
-          <li><a href="blog/">Blog</a></li>
-          <li><a href="support/">Support</a></li>
+          <li><a href="#home">Start</a></li>
+          <li><a href="#pricing">Preise</a></li>
+          <li><a href="#our-story">Unsere Geschichte</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#support">Support</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h3>Rechtliches</h3>
         <ul>
-          <li><a href="privacy-policy/">Datenschutz</a></li>
-          <li><a href="terms-of-service/">Nutzungsbedingungen</a></li>
+          <li><a href="#privacy-policy">Datenschutz</a></li>
+          <li><a href="#terms-of-service">Nutzungsbedingungen</a></li>
         </ul>
       </div>
     </div>
@@ -289,7 +630,7 @@
     </div>
     <div class="footer-bottom">
       <p>
-        <a href="cookies-policy/">Cookie-Richtlinie</a>
+        <a href="#cookies-policy">Cookie-Richtlinie</a>
         <span aria-hidden="true"> · </span>
         <a href="#" id="cookie-prefs">Cookie-Einstellungen</a>
       </p>
@@ -312,16 +653,17 @@
 
   <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie-Einwilligung">
     <div class="cookie-banner-inner">
-      <p class="cookie-banner-text">Wir verwenden Cookies und lokalen Speicher für Ihre Einstellungen. Mit Fortfahren akzeptieren Sie die Nutzung von Cookies. <a href="cookies-policy/">Learn more</a></p>
+      <p class="cookie-banner-text">Wir verwenden Cookies und lokalen Speicher für Ihre Einstellungen. Mit Fortfahren akzeptieren Sie die Nutzung von Cookies. <a href="#cookies-policy">Mehr erfahren</a></p>
       <div class="cookie-banner-actions">
         <button type="button" class="cookie-btn cookie-btn-accept">Akzeptieren</button>
         <button type="button" class="cookie-btn cookie-btn-reject">Ablehnen</button>
-        <a href="cookies-policy/" class="cookie-link">Cookie-Richtlinie</a>
+        <a href="#cookies-policy" class="cookie-link">Cookie-Richtlinie</a>
       </div>
     </div>
   </div>
 
   <script src="../assets/js/cookies.js"></script>
   <script src="../assets/js/footer.js"></script>
+  <script src="../assets/js/spa-nav.js"></script>
 </body>
 </html>
