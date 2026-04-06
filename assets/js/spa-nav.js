@@ -6,6 +6,48 @@
   var navSectionIds = ['home', 'pricing', 'our-story', 'blog', 'support'];
   var ticking = false;
 
+  function prefersReducedMotion() {
+    return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  }
+
+  /** Same-page #section links: smooth scroll even if CSS scroll-behavior fails to load (e.g. asset 404). */
+  function initInPageHashSmoothScroll() {
+    if (prefersReducedMotion()) return;
+
+    function scrollToId(id) {
+      var el = document.getElementById(id);
+      if (!el) return false;
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      return true;
+    }
+
+    document.addEventListener(
+      'click',
+      function (e) {
+        if (e.defaultPrevented || e.button !== 0) return;
+        if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+        var a = e.target.closest('a[href^="#"]');
+        if (!a) return;
+        var href = a.getAttribute('href');
+        if (!href || href === '#' || href.length < 2) return;
+        var id = href.slice(1);
+        if (!id) return;
+        if (!document.getElementById(id)) return;
+        e.preventDefault();
+        if (history.replaceState) {
+          history.replaceState(null, '', href);
+        } else {
+          window.location.hash = href;
+        }
+        scrollToId(id);
+        window.requestAnimationFrame(function () {
+          if (primaryNav) updateScrollSpy();
+        });
+      },
+      false
+    );
+  }
+
   function getHeaderOffset() {
     var root = document.documentElement;
     var v = getComputedStyle(root).getPropertyValue('--header-offset').trim();
@@ -115,9 +157,14 @@
     });
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initScrollSpy);
-  } else {
+  function initSpaNav() {
     initScrollSpy();
+    initInPageHashSmoothScroll();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSpaNav);
+  } else {
+    initSpaNav();
   }
 })();
