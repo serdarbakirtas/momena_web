@@ -26,6 +26,8 @@
         var cat = card.getAttribute('data-blog-category') || '';
         var match = value === 'all' || cat === value;
         card.classList.toggle('is-hidden', !match);
+        var li = card.closest('li');
+        if (li) li.style.display = match ? '' : 'none';
       });
     }
 
@@ -68,4 +70,3 @@
     initBlogFilter();
   }
 })();
-
