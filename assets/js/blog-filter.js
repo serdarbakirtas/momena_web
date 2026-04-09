@@ -11,7 +11,7 @@
 
   function initBlogFilter() {
     var filterRoot = document.querySelector('[data-blog-filter]');
-    var cards = Array.prototype.slice.call(document.querySelectorAll('[data-blog-card]'));
+    var cards = Array.prototype.slice.call(document.querySelectorAll('.blog-card[data-blog-category]'));
     if (!filterRoot || cards.length === 0) return;
 
     var buttons = Array.prototype.slice.call(filterRoot.querySelectorAll('[data-blog-filter-btn]'));
