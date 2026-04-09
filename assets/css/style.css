@@ -14,7 +14,8 @@
   --text: #f8faf9;
   --text-muted: #94a3a0;
   --border: rgba(107, 111, 139, 0.35);
-  --header-offset: 96px;
+  /* Fixed header total height (desktop includes QR block). */
+  --header-offset: 132px;
 }
 
 html {
@@ -900,7 +901,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-top: 96px;
+  padding-top: var(--header-offset);
 }
 
 .page-section {
