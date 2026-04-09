@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Momena’yı neden yerel öncelikli tasarladık – Momena</title>
+  <meta name="description" content="Momena neden yerel öncelikli: aile verileriniz varsayılan olarak cihazınızda kalır; isteğe bağlı şifreli iCloud Yedekleme ile." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="author" content="Momena" />
+  <meta name="theme-color" content="#1e1e2e" />
+  <link rel="canonical" href="https://momena.app/tr/blog/why-we-built-momena-local-first.html" />
+  <link rel="alternate" hreflang="en" href="https://momena.app/blog/why-we-built-momena-local-first.html" />
+  <link rel="alternate" hreflang="de" href="https://momena.app/de/blog/why-we-built-momena-local-first.html" />
+  <link rel="alternate" hreflang="tr" href="https://momena.app/tr/blog/why-we-built-momena-local-first.html" />
+  <link rel="alternate" hreflang="x-default" href="https://momena.app/blog/why-we-built-momena-local-first.html" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:site_name" content="Momena" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Momena’yı neden yerel öncelikli tasarladık" />
+  <meta property="og:description" content="Momena neden yerel öncelikli: aile verileriniz varsayılan olarak cihazınızda kalır; isteğe bağlı şifreli iCloud Yedekleme ile." />
+  <meta property="og:url" content="https://momena.app/tr/blog/why-we-built-momena-local-first.html" />
+  <meta property="og:image" content="https://momena.app/assets/images/MomenaLogo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <link rel="stylesheet" href="../../assets/css/cookies-banner.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Momena’yı neden yerel öncelikli tasarladık",
+    "datePublished": "2026-04-09",
+    "dateModified": "2026-04-09",
+    "author": { "@type": "Organization", "name": "Momena" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Momena",
+      "logo": { "@type": "ImageObject", "url": "https://momena.app/assets/images/MomenaLogo.png" }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://momena.app/tr/blog/why-we-built-momena-local-first.html"
+    }
+  }
+  </script>
+</head>
+<body oncontextmenu="return false;">
+  <div class="page-shell">
+    <header class="header">
+      <div class="header-bar">
+        <div class="header-inner">
+          <a class="logo-header" href="../#home">
+            <img src="../../assets/images/MomenaLogo.png" alt="Momena" width="36" height="36" />
+            <span>Momena</span>
+          </a>
+          <nav class="nav-links" aria-label="Ana gezinme">
+            <a href="../#home">Ana sayfa</a>
+            <a href="../#pricing">Fiyatlandırma</a>
+            <a href="../#our-story">Hikayemiz</a>
+            <a href="./">Blog</a>
+            <a href="../#support">Support</a>
+          </nav>
+        </div>
+        <a
+          class="header-qr"
+          href="https://apps.apple.com/us/app/familyakit/id6758870737"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Momena’yı App Store’dan indir"
+        >
+          <img src="../../assets/images/app-store-qr.png" width="88" height="88" alt="" decoding="async" />
+          <span class="header-qr-label">Uygulama indir</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="page-main wide">
+      <nav class="blog-back" aria-label="Blog navigation">
+        <a href="/blog/">← Tüm yazılar</a>
+      </nav>
+
+      <article class="blog-article-page" itemscope itemtype="https://schema.org/BlogPosting">
+        <header class="blog-article-header">
+          <div class="blog-article-badges">
+            <span class="blog-card__badge blog-card__badge--engineering">Engineering</span>
+          </div>
+          <h1 itemprop="headline">Momena’yı neden yerel öncelikli tasarladık</h1>
+          <p class="blog-article-meta">
+            <time datetime="2026-04-09" itemprop="datePublished">9 Nisan 2026</time>
+            <span aria-hidden="true">·</span>
+            <span>3 dk okuma</span>
+            <span aria-hidden="true">·</span>
+            <span>Gizlilik &amp; yaklaşım</span>
+          </p>
+        </header>
+
+        <div class="blog-article-body" itemprop="articleBody">
+          <p>Momena’yı geliştirmeye başladığımızda, ilk kararlarımızdan biri tasarım ya da özellikler değildi. Verinizin nerede yaşayacağıydı.</p>
+          <p>Çoğu uygulama bu soruyu aynı şekilde yanıtlar: sunucularımızda, otomatik senkron, her yerden erişilebilir. Rahat görünüyor. Ve öyle — ta ki devam sorularını sorana kadar.</p>
+          <p>Kim görebilir? Ne kadar süre saklanır? Şirket kapanırsa ne olur? Bir sızıntı olursa?</p>
+          <p>Genel bir üretkenlik uygulaması için bunlar soyut gelebilir. Çocuğunuzun ilk adımlarını, sağlık kayıtlarını ve aile anılarını tutan bir uygulama için ise çok gerçek.</p>
+          <p>Bu yüzden farklı bir seçim yaptık. <strong>Momena yerel önceliklidir.</strong></p>
+
+          <h2>Yerel öncelikli gerçekten ne demek?</h2>
+          <p>Yerel öncelikli demek: veriniz varsayılan olarak cihazınızda durur. Bizim sunucularımızda değil. Üçüncü taraf bir veritabanında değil. Telefonunuzda.</p>
+          <p>Bir anı eklediğinizde, bir sağlık kaydı kaydettiğinizde ya da bir kilometre taşı yazdığınızda, veri cihazınıza yazılır ve hemen şifrelenir. Biz görmeyiz. Göremeyiz. Anahtar bizde değildir.</p>
+          <p>Bu sadece bir gizlilik politikası vaadi değil — mimari bir karardır. Sunucu tarafı bir veritabanı olmadığı için “ihlal edilecek” bir yer yoktur.</p>
+
+          <h2>“Peki iCloud Yedekleme?”</h2>
+          <p>İyi soru. Momena 1.4 isteğe bağlı iCloud Yedekleme getirdi — evet, isterseniz veriniz cihazdan çıkabilir.</p>
+          <p>Ana kelime <em>isterseniz</em>. Momena’da iCloud Yedekleme:</p>
+          <ul>
+            <li><strong>Varsayılan değil</strong>, isteğe bağlı</li>
+            <li>Cihazdan çıkmadan önce <strong>uçtan uca şifrelenir</strong></li>
+            <li><strong>Parola korumalıdır</strong> — biz bile yedeğinizi okuyamayız</li>
+            <li>Parolanızın güvenle taşınması için <strong>iCloud Anahtar Zinciri</strong> ile senkronlanır</li>
+          </ul>
+          <p>Açık olup olmadığına siz karar verirsiniz. Parolayı siz belirlersiniz. İçeriğe biz dokunmayız.</p>
+
+          <h2>Neden düşündüğünüzden daha önemli?</h2>
+          <p>Momena’nın neler sakladığını düşünün: büyüme ölçümleri, doktor ziyaretleri, ilk kelimeler, günlük notları, aile fotoğrafları, semptomlar.</p>
+          <p>Bu, bir ailenin sahip olabileceği en kişisel verilerden bazıları. Buna rağmen birçok uygulama bunları alışveriş listesi gibi görür — “kolaylık” için sunucuya yüklenir.</p>
+          <p>Bizce bu doğru değil.</p>
+          <p>Çocuklar verilerinin yüklenmesine rıza gösteremez. Ebeveynler de en özel anlarının nerede bittiğini anlamak için onlarca sayfa okumak zorunda kalmamalı.</p>
+          <p>Yerel öncelikli yaklaşım bunun cevabı: basit, dürüst, yapısal.</p>
+
+          <h2>Kabul ettiğimiz bedeller</h2>
+          <p>Yerel öncelikli yaklaşımın gerçek kısıtları var.</p>
+          <p>Otomatik çoklu cihaz senkronu yok. Yeni bir telefona geçtiğinizde yedekten geri yüklersiniz. Her yerden giriş yapılacak bir web uygulaması yok.</p>
+          <p>Bu bedelleri bilinçli kabul ettik. Çünkü bir aile uygulaması için <strong>gizlilik bir ayar değil, bir özelliktir.</strong></p>
+
+          <h2>Sırada ne var?</h2>
+          <p>Partnerle paylaşım, aile cihazları arasında senkron gibi istediğimiz özellikler var — bunlar bu kararları tekrar dikkatle düşünmeyi gerektiriyor.</p>
+          <p>Ama ilke aynı: ailenizin verisi ailenize aittir. Her mimari kararımız buradan başlar.</p>
+          <p>Şimdilik: veriniz cihazınızda. Olması gereken yer tam da orası.</p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer-site">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Gezinme</h3>
+          <ul>
+            <li><a href="../#home">Ana sayfa</a></li>
+            <li><a href="../#pricing">Fiyatlandırma</a></li>
+            <li><a href="../#our-story">Hikayemiz</a></li>
+            <li><a href="./">Blog</a></li>
+            <li><a href="../#support">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Yasal</h3>
+          <ul>
+            <li><a href="../#privacy-policy">Gizlilik politikası</a></li>
+            <li><a href="../#terms-of-service">Kullanım şartları</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-lang-row">
+        <div class="footer-lang-block">
+          <span class="footer-lang-label" id="footer-lang-label">Dil</span>
+          <details class="lang-select">
+            <summary class="lang-select-summary">
+              <span class="lang-flag" aria-hidden="true">🇹🇷</span>
+              <span>Türkçe</span>
+              <span class="lang-chevron" aria-hidden="true">▾</span>
+            </summary>
+            <ul class="lang-select-list" role="list">
+              <li><a class="lang-select-link" href="../../blog/why-we-built-momena-local-first.html" hreflang="en"><span class="lang-flag" aria-hidden="true">🇬🇧</span> English</a></li>
+              <li><a class="lang-select-link" href="../../de/blog/why-we-built-momena-local-first.html" hreflang="de"><span class="lang-flag" aria-hidden="true">🇩🇪</span> Deutsch</a></li>
+              <li><a class="lang-select-link" href="./why-we-built-momena-local-first.html" hreflang="tr" aria-current="page"><span class="lang-flag" aria-hidden="true">🇹🇷</span> Türkçe</a></li>
+            </ul>
+          </details>
+        </div>
+      </div>
+
+      <div class="footer-bottom-split">
+        <p class="footer-copy">© 2026 Momena. All rights reserved.</p>
+        <div class="footer-social" aria-label="Social media">
+          <a href="https://www.linkedin.com/company/momena-app/" class="footer-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/cookies.js"></script>
+  <script src="../../assets/js/footer.js"></script>
+</body>
+</html>

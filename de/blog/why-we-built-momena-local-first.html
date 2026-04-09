@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warum wir Momena „local-first“ gebaut haben – Momena</title>
+  <meta name="description" content="Warum Momena local-first ist: Ihre Familiendaten bleiben standardmäßig auf Ihrem Gerät – mit optionalem, verschlüsseltem iCloud-Backup." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="author" content="Momena" />
+  <meta name="theme-color" content="#1e1e2e" />
+  <link rel="canonical" href="https://momena.app/de/blog/why-we-built-momena-local-first.html" />
+  <link rel="alternate" hreflang="en" href="https://momena.app/blog/why-we-built-momena-local-first.html" />
+  <link rel="alternate" hreflang="de" href="https://momena.app/de/blog/why-we-built-momena-local-first.html" />
+  <link rel="alternate" hreflang="tr" href="https://momena.app/tr/blog/why-we-built-momena-local-first.html" />
+  <link rel="alternate" hreflang="x-default" href="https://momena.app/blog/why-we-built-momena-local-first.html" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:site_name" content="Momena" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Warum wir Momena „local-first“ gebaut haben" />
+  <meta property="og:description" content="Warum Momena local-first ist: Ihre Familiendaten bleiben standardmäßig auf Ihrem Gerät – mit optionalem, verschlüsseltem iCloud-Backup." />
+  <meta property="og:url" content="https://momena.app/de/blog/why-we-built-momena-local-first.html" />
+  <meta property="og:image" content="https://momena.app/assets/images/MomenaLogo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <link rel="stylesheet" href="../../assets/css/cookies-banner.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Warum wir Momena „local-first“ gebaut haben",
+    "datePublished": "2026-04-09",
+    "dateModified": "2026-04-09",
+    "author": { "@type": "Organization", "name": "Momena" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Momena",
+      "logo": { "@type": "ImageObject", "url": "https://momena.app/assets/images/MomenaLogo.png" }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://momena.app/de/blog/why-we-built-momena-local-first.html"
+    }
+  }
+  </script>
+</head>
+<body oncontextmenu="return false;">
+  <div class="page-shell">
+    <header class="header">
+      <div class="header-bar">
+        <div class="header-inner">
+          <a class="logo-header" href="../#home">
+            <img src="../../assets/images/MomenaLogo.png" alt="Momena" width="36" height="36" />
+            <span>Momena</span>
+          </a>
+          <nav class="nav-links" aria-label="Hauptnavigation">
+            <a href="../#home">Start</a>
+            <a href="../#pricing">Preise</a>
+            <a href="../#our-story">Unsere Geschichte</a>
+            <a href="./">Blog</a>
+            <a href="../#support">Support</a>
+          </nav>
+        </div>
+        <a
+          class="header-qr"
+          href="https://apps.apple.com/us/app/familyakit/id6758870737"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Momena im App Store laden"
+        >
+          <img src="../../assets/images/app-store-qr.png" width="88" height="88" alt="" decoding="async" />
+          <span class="header-qr-label">App-Download</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="page-main wide">
+      <nav class="blog-back" aria-label="Blog navigation">
+        <a href="/blog/">← Alle Beiträge</a>
+      </nav>
+
+      <article class="blog-article-page" itemscope itemtype="https://schema.org/BlogPosting">
+        <header class="blog-article-header">
+          <div class="blog-article-badges">
+            <span class="blog-card__badge blog-card__badge--engineering">Engineering</span>
+          </div>
+          <h1 itemprop="headline">Warum wir Momena „local-first“ gebaut haben</h1>
+          <p class="blog-article-meta">
+            <time datetime="2026-04-09" itemprop="datePublished">9. April 2026</time>
+            <span aria-hidden="true">·</span>
+            <span>3 Min. Lesezeit</span>
+            <span aria-hidden="true">·</span>
+            <span>Privacy &amp; Philosophie</span>
+          </p>
+        </header>
+
+        <div class="blog-article-body" itemprop="articleBody">
+          <p>Als wir angefangen haben, Momena zu bauen, war eine der ersten Entscheidungen nicht Design oder Features. Sondern: Wo leben Ihre Daten?</p>
+          <p>Die meisten Apps beantworten diese Frage gleich: auf unseren Servern, automatisch synchronisiert, überall erreichbar. Das klingt bequem. Und das ist es — bis man die Anschlussfragen stellt.</p>
+          <p>Wer kann es sehen? Wie lange wird es gespeichert? Was passiert, wenn die Firma aufgibt? Was ist bei einem Leak?</p>
+          <p>Für eine normale Produktivitäts-App sind diese Fragen oft abstrakt. Für eine App mit den ersten Schritten Ihres Kindes, Gesundheitsdaten und Familienerinnerungen sind sie sehr real.</p>
+          <p>Darum haben wir uns anders entschieden. <strong>Momena ist local-first.</strong></p>
+
+          <h2>Was local-first wirklich bedeutet</h2>
+          <p>Local-first heißt: Ihre Daten liegen standardmäßig auf Ihrem Gerät. Nicht auf unseren Servern. Nicht in einer externen Datenbank. Auf Ihrem iPhone.</p>
+          <p>Wenn Sie eine Erinnerung hinzufügen, einen Gesundheitswert speichern oder einen Meilenstein notieren, wird das direkt auf dem Gerät geschrieben und sofort verschlüsselt. Wir sehen es nicht. Wir können es nicht sehen. Wir haben keine Schlüssel.</p>
+          <p>Das ist nicht nur ein Versprechen in einer Privacy Policy — es ist eine Architekturentscheidung. Es gibt keine serverseitige Datenbank, die man „hacken“ könnte, weil es sie nicht gibt.</p>
+
+          <h2>„Und was ist mit iCloud-Backup?“</h2>
+          <p>Gute Frage. Momena 1.4 hat optionales iCloud-Backup eingeführt — und ja, damit können Ihre Daten das Gerät verlassen, wenn Sie es möchten.</p>
+          <p>Das entscheidende Wort ist <em>möchten</em>. iCloud-Backup in Momena ist:</p>
+          <ul>
+            <li><strong>Opt-in</strong>, nicht Standard</li>
+            <li><strong>Ende-zu-Ende verschlüsselt</strong>, bevor überhaupt etwas das Gerät verlässt</li>
+            <li><strong>Passwortgeschützt</strong> — selbst wir können das Backup nicht lesen</li>
+            <li>Synchron über <strong>iCloud-Schlüsselbund</strong>, damit Ihr Passwort sicher mit Ihnen „mitzieht“</li>
+          </ul>
+          <p>Sie entscheiden, ob es aktiv ist. Sie wählen das Passwort. Wir berühren den Inhalt nicht.</p>
+
+          <h2>Warum das wichtiger ist, als man denkt</h2>
+          <p>Überlegen Sie, was Momena speichert: Wachstumsmessungen, Arztbesuche, erste Worte, Tagebucheinträge, Familienfotos, Symptome.</p>
+          <p>Das sind einige der persönlichsten Daten, die eine Familie haben kann — und trotzdem behandeln viele Apps sie wie eine Einkaufsliste: alles wird der Bequemlichkeit halber hochgeladen.</p>
+          <p>Wir halten das für falsch.</p>
+          <p>Kinder können nicht einwilligen, dass ihre Daten hochgeladen werden. Eltern sollten keine 40-seitige Erklärung lesen müssen, um zu verstehen, wo die privatesten Familienmomente landen.</p>
+          <p>Local-first ist unsere Antwort darauf: einfach, ehrlich, strukturell.</p>
+
+          <h2>Die Trade-offs, die wir bewusst akzeptiert haben</h2>
+          <p>Local-first ist nicht „gratis“. Es gibt echte Einschränkungen.</p>
+          <p>Es gibt keine automatische Multi-Device-Synchronisierung. Wenn Sie ein neues iPhone haben, stellen Sie aus einem Backup wieder her. Es gibt keine Web-App zum Einloggen.</p>
+          <p>Wir haben diese Trade-offs bewusst gewählt. Denn für eine Familien-App ist <strong>Privatsphäre ein Feature, nicht eine Einstellung.</strong></p>
+
+          <h2>Was als Nächstes kommt</h2>
+          <p>Es gibt Features, die wir bauen wollen — z. B. Teilen mit Partner*innen oder Sync zwischen Familiengeräten — bei denen wir diese Entscheidungen erneut sorgfältig abwägen müssen.</p>
+          <p>Das Prinzip bleibt: Die Daten Ihrer Familie gehören Ihrer Familie. Jede Architekturentscheidung startet genau dort.</p>
+          <p>Bis dahin gilt: Ihre Daten sind auf Ihrem Gerät. Genau da gehören sie hin.</p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer-site">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="../#home">Start</a></li>
+            <li><a href="../#pricing">Preise</a></li>
+            <li><a href="../#our-story">Unsere Geschichte</a></li>
+            <li><a href="./">Blog</a></li>
+            <li><a href="../#support">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Rechtliches</h3>
+          <ul>
+            <li><a href="../#privacy-policy">Datenschutz</a></li>
+            <li><a href="../#terms-of-service">Nutzungsbedingungen</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-lang-row">
+        <div class="footer-lang-block">
+          <span class="footer-lang-label" id="footer-lang-label">Sprache</span>
+          <details class="lang-select">
+            <summary class="lang-select-summary">
+              <span class="lang-flag" aria-hidden="true">🇩🇪</span>
+              <span>Deutsch</span>
+              <span class="lang-chevron" aria-hidden="true">▾</span>
+            </summary>
+            <ul class="lang-select-list" role="list">
+              <li><a class="lang-select-link" href="../../blog/why-we-built-momena-local-first.html" hreflang="en"><span class="lang-flag" aria-hidden="true">🇬🇧</span> English</a></li>
+              <li><a class="lang-select-link" href="./why-we-built-momena-local-first.html" hreflang="de" aria-current="page"><span class="lang-flag" aria-hidden="true">🇩🇪</span> Deutsch</a></li>
+              <li><a class="lang-select-link" href="../../tr/blog/why-we-built-momena-local-first.html" hreflang="tr"><span class="lang-flag" aria-hidden="true">🇹🇷</span> Türkçe</a></li>
+            </ul>
+          </details>
+        </div>
+      </div>
+
+      <div class="footer-bottom-split">
+        <p class="footer-copy">© 2026 Momena. All rights reserved.</p>
+        <div class="footer-social" aria-label="Social media">
+          <a href="https://www.linkedin.com/company/momena-app/" class="footer-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/cookies.js"></script>
+  <script src="../../assets/js/footer.js"></script>
+</body>
+</html>
