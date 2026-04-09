@@ -911,13 +911,67 @@ body {
 .page-main {
   flex: 1;
   width: 100%;
-  max-width: 720px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 24px 24px 80px;
 }
 
 .page-main.wide {
   max-width: 900px;
+}
+
+/* Homepage blog preview: keep it to max 4 cards */
+.blog-preview-grid.blog-preview-grid--home > li:nth-child(n + 5) {
+  display: none;
+}
+
+/* Blog category badges */
+.blog-card__badge--child-development {
+  background: rgba(72, 187, 120, 0.14);
+  color: #48bb78;
+  border: 1px solid rgba(72, 187, 120, 0.28);
+}
+
+.blog-card__badge--privacy-philosophy {
+  background: rgba(99, 102, 241, 0.14);
+  color: #8b8dff;
+  border: 1px solid rgba(99, 102, 241, 0.28);
+}
+
+/* Blog index category filter */
+.blog-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0 24px;
+}
+
+.blog-filter__btn {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+
+.blog-filter__btn:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.blog-filter__btn[aria-pressed='true'] {
+  border-color: rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.blog-card.is-hidden {
+  display: none;
 }
 
 .page-title {
