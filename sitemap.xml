@@ -70,6 +70,100 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://momena.app/blog/"/>
   </url>
 
+  <!-- Legal pages -->
+  <url>
+    <loc>https://momena.app/privacy-policy/</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://momena.app/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://momena.app/tr/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://momena.app/de/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://momena.app/privacy-policy/"/>
+  </url>
+  <url>
+    <loc>https://momena.app/tr/privacy-policy/</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://momena.app/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://momena.app/tr/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://momena.app/de/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://momena.app/privacy-policy/"/>
+  </url>
+  <url>
+    <loc>https://momena.app/de/privacy-policy/</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://momena.app/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://momena.app/tr/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://momena.app/de/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://momena.app/privacy-policy/"/>
+  </url>
+
+  <url>
+    <loc>https://momena.app/terms-of-service/</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://momena.app/terms-of-service/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://momena.app/tr/terms-of-service/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://momena.app/de/terms-of-service/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://momena.app/terms-of-service/"/>
+  </url>
+  <url>
+    <loc>https://momena.app/tr/terms-of-service/</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://momena.app/terms-of-service/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://momena.app/tr/terms-of-service/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://momena.app/de/terms-of-service/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://momena.app/terms-of-service/"/>
+  </url>
+  <url>
+    <loc>https://momena.app/de/terms-of-service/</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://momena.app/terms-of-service/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://momena.app/tr/terms-of-service/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://momena.app/de/terms-of-service/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://momena.app/terms-of-service/"/>
+  </url>
+
+  <url>
+    <loc>https://momena.app/cookies-policy/</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://momena.app/cookies-policy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://momena.app/tr/cookies-policy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://momena.app/de/cookies-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://momena.app/cookies-policy/"/>
+  </url>
+  <url>
+    <loc>https://momena.app/tr/cookies-policy/</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://momena.app/cookies-policy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://momena.app/tr/cookies-policy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://momena.app/de/cookies-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://momena.app/cookies-policy/"/>
+  </url>
+  <url>
+    <loc>https://momena.app/de/cookies-policy/</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://momena.app/cookies-policy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://momena.app/tr/cookies-policy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://momena.app/de/cookies-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://momena.app/cookies-policy/"/>
+  </url>
+
   <!-- Blog kategorileri -->
   <url>
     <loc>https://momena.app/blog/?category=product-updates</loc>
