@@ -474,12 +474,14 @@ body {
   margin: 0 0 48px;
 }
 
+/* Four equal columns on large screens (matches four feature cards) */
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 24px;
   max-width: var(--layout-max-width);
   margin: 0 auto;
+  align-items: stretch;
 }
 
 .feature-card {
@@ -539,12 +541,21 @@ body {
   margin: 0 0 48px;
 }
 
+/* Equal columns: use --cols-3 or --cols-4 on the element (see index.html) */
 .security-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
   max-width: var(--layout-max-width);
   margin: 0 auto;
+  align-items: stretch;
+}
+
+.security-grid--cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.security-grid--cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .security-card {
@@ -1360,19 +1371,54 @@ body {
   text-decoration: underline;
 }
 
-/* Blog preview grid (homepage & blog index) */
+/* Blog preview grid (homepage & blog index): four equal columns on large screens */
 .blog-preview-grid {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 20px;
+  align-items: stretch;
 }
 
 .blog-preview-actions {
   margin-top: 28px;
   text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .security-grid--cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .blog-preview-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .security-grid--cols-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .security-grid--cols-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-preview-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .blog-card {
@@ -1500,7 +1546,7 @@ body {
   text-decoration: underline;
 }
 
-/* Standalone blog article */
+/* Standalone blog article — same content width as .page-main / nav column */
 .blog-back {
   margin: 0 0 20px;
   font-size: 15px;
@@ -1517,8 +1563,9 @@ body {
 }
 
 .blog-article-page {
-  max-width: 640px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: none;
+  margin: 0;
 }
 
 .blog-article-header {
