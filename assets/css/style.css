@@ -1399,6 +1399,23 @@ body {
   outline-offset: 3px;
 }
 
+/* Blog card thumbnail (index / listing) */
+.blog-card__media {
+  order: -1;
+  margin: -22px -22px 16px;
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.blog-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .blog-card__badge {
   align-self: flex-start;
   display: inline-block;
@@ -1524,6 +1541,22 @@ body {
   flex-wrap: wrap;
   align-items: center;
   gap: 8px 10px;
+}
+
+.blog-article-hero {
+  margin: 0 0 28px;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  max-height: min(420px, 52vh);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.blog-article-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .blog-article-body {

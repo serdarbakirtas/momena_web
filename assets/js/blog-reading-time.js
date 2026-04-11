@@ -10,5 +10,12 @@
     return w.length > 0;
   }).length;
   var mins = Math.max(1, Math.ceil(words / 200));
-  out.textContent = mins + ' min read';
+  var lang = (document.documentElement && document.documentElement.lang) || 'en';
+  if (lang === 'de') {
+    out.textContent = mins + ' Min. Lesezeit';
+  } else if (lang === 'tr') {
+    out.textContent = mins + ' dk okuma';
+  } else {
+    out.textContent = mins + ' min read';
+  }
 })();
