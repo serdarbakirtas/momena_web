@@ -16,6 +16,8 @@
   --border: rgba(107, 111, 139, 0.35);
   /* Fixed header total height (desktop includes QR block). */
   --header-offset: 132px;
+  /* Align main column, footer, newsletter, and homepage blocks with .header-bar */
+  --layout-max-width: 1100px;
 }
 
 html {
@@ -55,7 +57,7 @@ body {
 
 .header-bar {
   pointer-events: auto;
-  max-width: 1100px;
+  max-width: var(--layout-max-width);
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -424,7 +426,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  max-width: 1000px;
+  max-width: var(--layout-max-width);
   margin: 0 auto;
   justify-items: center;
   align-items: end;
@@ -476,7 +478,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
-  max-width: 960px;
+  max-width: var(--layout-max-width);
   margin: 0 auto;
 }
 
@@ -541,7 +543,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
-  max-width: 900px;
+  max-width: var(--layout-max-width);
   margin: 0 auto;
 }
 
@@ -658,13 +660,13 @@ body {
 /* Footer */
 .footer-site {
   margin-top: auto;
-  padding: 64px 24px 40px;
+  padding: 64px 20px 40px;
   border-top: 1px solid var(--border);
   background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.2) 100%);
 }
 
 .footer-grid {
-  max-width: 960px;
+  max-width: var(--layout-max-width);
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -705,14 +707,15 @@ body {
 
 /* Newsletter (Mailchimp) */
 .newsletter-section {
-  padding: 3rem 1.5rem;
+  padding: 3rem 20px;
   text-align: center;
   border-top: 1px solid rgba(255,255,255,0.08);
 }
 
 .newsletter-inner {
-  max-width: 480px;
+  max-width: var(--layout-max-width);
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .newsletter-section h2 {
@@ -729,6 +732,9 @@ body {
 
 .newsletter-form {
   position: relative;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .newsletter-fields {
@@ -798,7 +804,7 @@ body {
 }
 
 .footer-bottom {
-  max-width: 960px;
+  max-width: var(--layout-max-width);
   margin: 48px auto 0;
   padding-top: 28px;
   border-top: 1px solid var(--border);
@@ -823,7 +829,7 @@ body {
 
 /* Language selector (footer) */
 .footer-lang-row {
-  max-width: 960px;
+  max-width: var(--layout-max-width);
   margin: 0 auto 32px;
   padding: 0 4px;
 }
@@ -972,7 +978,7 @@ body {
 }
 
 .footer-bottom-split {
-  max-width: 960px;
+  max-width: var(--layout-max-width);
   margin: 0 auto;
   padding-top: 8px;
   display: flex;
@@ -1027,13 +1033,14 @@ body {
 .page-main {
   flex: 1;
   width: 100%;
-  max-width: 900px;
+  max-width: var(--layout-max-width);
   margin: 0 auto;
-  padding: 24px 24px 80px;
+  /* Horizontal padding matches .header (16px 20px) so columns line up with the nav bar */
+  padding: 24px 20px 80px;
 }
 
 .page-main.wide {
-  max-width: 900px;
+  max-width: var(--layout-max-width);
 }
 
 /* Homepage blog preview: keep it to max 4 cards */
